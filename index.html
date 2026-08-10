@@ -6,9 +6,18 @@
 <title>MAISON YR — Learn how markets actually move.</title>
 <meta name="description" content="Institutional-grade macro trading education. Every trade posted to the desk before entry — the record is public. Not signals. The goal is your independence."/>
 <meta property="og:title" content="MAISON YR — Learn how markets actually move."/>
-<meta property="og:description" content="Macro trading education. Every trade posted before entry. The record is public."/>
+<meta property="og:description" content="Macro trading education. Every trade posted before entry. The record is public: +176.30% across four months, 90 trades."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://maisonyrtrading.com/"/>
+<meta property="og:site_name" content="MAISON YR"/>
+<meta property="og:image" content="https://maisonyrtrading.com/assets/og_maison_yr.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="MAISON YR — Macro, Discipline, Execution. +176.30% across four months, 90 trades posted before entry."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="MAISON YR — Learn how markets actually move."/>
+<meta name="twitter:description" content="Macro trading education. Every trade posted before entry. The record is public."/>
+<meta name="twitter:image" content="https://maisonyrtrading.com/assets/og_maison_yr.jpg"/>
 <link rel="canonical" href="https://maisonyrtrading.com/"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%2316202E%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Georgia,serif%22 font-size=%2228%22 fill=%22%23F4EFE6%22 text-anchor=%22middle%22%3EYR%3C/text%3E%3C/svg%3E"/>
 <!-- Google Analytics -->
@@ -107,11 +116,10 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .film{background:var(--navy);color:var(--cream);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;aspect-ratio:16/7.5;padding:30px}
 .film.tall{aspect-ratio:16/9}
 .film .grid-lines{position:absolute;inset:0;opacity:.07;pointer-events:none}
-.film .play{width:74px;height:74px;border:1px solid rgba(244,239,230,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:22px;transition:.25s}
-.film:hover .play{border-color:var(--cream);transform:scale(1.05)}
-.film .play svg{width:20px;height:20px;fill:var(--cream);margin-left:3px}
+.film .frule{width:56px;height:1px;background:rgba(244,239,230,.45);margin-bottom:26px}
 .film .ft{font-family:var(--serif);font-size:clamp(19px,2.4vw,26px);text-align:center;margin-bottom:8px}
 .film .fl{font-family:var(--label);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,239,230,.65);text-align:center}
+.film .fn{font-size:13.5px;color:rgba(244,239,230,.55);text-align:center;max-width:46ch;margin-top:18px;line-height:1.6}
 .film .fs{position:absolute;bottom:16px;right:20px;font-family:var(--label);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,239,230,.62)}
 .filmband{padding:0 0 104px}
 .filmband .ctapair{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
@@ -181,13 +189,15 @@ details.acc .accbody{padding:14px 0 4px}
 .rcard .rrl{font-family:var(--label);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .rcard .rstats{display:grid;grid-template-columns:repeat(4,1fr);padding:16px 26px 22px;gap:8px}
 .rcard .rs .n{font-family:var(--mono);font-size:15.5px;font-weight:500}
-.rcard .rs .l{font-family:var(--label);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px;line-height:1.4}
+.rcard .rs .l{font-family:var(--label);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:5px;line-height:1.4}
 .rcard .rfoot{font-family:var(--mono);font-size:11.5px;color:var(--muted);padding:12px 26px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .rcard .rfoot b{color:var(--positive);font-weight:500}
 .totalband{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(122,46,56,.4);background:var(--cream2);margin-top:22px}
 .totalband .fact{padding:22px 16px}
 .closes{margin:44px 0 0}
-.closes .ch{font-family:var(--label);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.closes .ch{font-family:var(--label);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.closes .cnote{font-size:13.5px;color:var(--faint);margin-bottom:14px;line-height:1.6}
+.closerow .cd{font-family:var(--mono);font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
 .closerow{display:flex;justify-content:space-between;gap:14px;border-top:1px solid var(--line-soft);padding:12px 0;font-size:14px}
 .closerow:last-child{border-bottom:1px solid var(--line-soft)}
 .closerow .cr{font-family:var(--mono);color:var(--positive);white-space:nowrap}
@@ -206,7 +216,9 @@ details.acc .accbody{padding:14px 0 4px}
 .rstrip .rt{flex:0 0 200px;scroll-snap-align:start;border:1px solid rgba(244,239,230,.2);cursor:zoom-in;transition:.2s}
 .rstrip .rt:hover{border-color:rgba(244,239,230,.5);transform:translateY(-3px)}
 .rstrip .rt img{width:100%;height:290px;object-fit:cover;object-position:top}
-.rstrip .rt .cap{font-family:var(--mono);font-size:10.5px;padding:8px 10px;color:rgba(244,239,230,.65);border-top:1px solid rgba(244,239,230,.15)}
+.rstrip .rt .cap{font-family:var(--mono);font-size:11px;line-height:1.55;padding:9px 11px;color:rgba(244,239,230,.68);border-top:1px solid rgba(244,239,230,.15)}
+.rstrip .rt .cap .res{display:block;color:#7FB79C;margin-top:2px}
+.rstrip .rt .cap .res.down{color:#D89A8C}
 .receipts-band .more{font-family:var(--label);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,239,230,.6);margin-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .receipts-band .more a{color:var(--cream);border-bottom:1px solid rgba(244,239,230,.4)}
 
@@ -280,6 +292,15 @@ details.acc .accbody{padding:14px 0 4px}
 .pquote .by{font-style:normal;font-family:var(--label);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:12px;display:block}
 .pricing-intro{max-width:640px;margin:-26px auto 44px;text-align:center;color:var(--soft);font-size:15px}
 .pmicro{text-align:center;font-family:var(--label);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:28px;line-height:2}
+/* the dated founding-rate announcement — a statement of fact, never a countdown */
+.deadline{max-width:720px;margin:38px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;text-align:center}
+.deadline .dk{font-family:var(--label);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--wine);margin-bottom:10px}
+.deadline .dd{font-family:var(--mono);font-size:15px;color:var(--navy);line-height:1.75}
+.deadline .dn{font-size:13.5px;color:var(--muted);margin-top:10px;line-height:1.65}
+.price .prate{font-family:var(--mono);font-size:12.5px;color:var(--wine);border-left:2px solid var(--wine);padding-left:12px;margin:-10px 0 20px;line-height:1.65}
+/* skip link — visible only on focus */
+.skip{position:absolute;left:-9999px;top:0;z-index:130;background:var(--navy);color:var(--cream);font-family:var(--label);font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:14px 22px}
+.skip:focus{left:0}
 
 /* ---------- FAQ ---------- */
 .faq{max-width:780px;margin:0 auto}
@@ -360,11 +381,14 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
   .film{aspect-ratio:16/10}
   .rcard .rret{font-size:34px}
   .rcard .rstats{grid-template-columns:1fr 1fr;gap:14px}
+  .closerow{flex-direction:column;gap:4px;align-items:flex-start}
+  .closerow .cr{white-space:normal}
   #joinbar .jt span.opt{display:none}
 }
 </style>
 </head>
 <body>
+<a class="skip" href="#method">Skip to content</a>
 <div id="progress"></div>
 
 <nav>
@@ -372,6 +396,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     <a class="mark" href="#top">MAISON&nbsp;YR</a>
     <div class="navlinks">
       <a href="#method">The Method</a>
+      <a href="#school">Free Chapters</a>
       <a href="#programs">Programs</a>
       <a href="#results">Results</a>
       <a href="#receipts">Receipts</a>
@@ -380,17 +405,19 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <a href="#faq">FAQ</a>
     </div>
     <a class="navcta" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor</a>
-    <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobilemenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div id="mobilemenu">
   <a href="#method">The Method</a>
+  <a href="#school">Free Chapters</a>
   <a href="#programs">Programs</a>
   <a href="#results">Results</a>
   <a href="#receipts">Receipts</a>
   <a href="#team">The Founder</a>
   <a href="#pricing">Pricing</a>
   <a href="#faq">FAQ</a>
+  <a href="/start/">Start Free →</a>
   <a href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener" style="color:var(--wine)">Join the Floor →</a>
 </div>
 
@@ -415,13 +442,14 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <div class="btns">
         <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
         <a class="btn btn-ghost" href="https://calendly.com/maisonyr/fit-check" target="_blank" rel="noopener">Book a Free Fit Check</a>
+        <a class="btn btn-ghost" href="/start/">Start Free →</a>
       </div>
-      <p class="microline">Join directly — no call needed · The fit check is free · 30 minutes</p>
+      <p class="microline">Join directly — no call needed · The fit check is free · 30 minutes · Two chapters of the Macro School are open to anyone</p>
       <div class="facts">
         <div class="fact"><div class="n mono">+176.30%</div><div class="l">Four Months · Documented · Apr–Jul 2026</div></div>
         <div class="fact"><div class="n mono">90</div><div class="l">Trades · All Posted Before Entry</div></div>
         <div class="fact"><div class="n mono">1%</div><div class="l">Risk Per Trade · Scored in R</div></div>
-        <div class="fact"><div class="n mono">8 Years</div><div class="l">Documented · No Filter</div></div>
+        <div class="fact"><div class="n mono">54.4%</div><div class="l">Combined Win Rate · Apr–Jul 2026</div></div>
       </div>
     </div>
   </div>
@@ -430,12 +458,13 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 <!-- ============ FILM 1 · VSL ============ -->
 <section class="filmband" id="film">
   <div class="wrap reveal">
-    <div class="film tall" role="img" aria-label="Why Markets Actually Move — The MAISON YR Film — landing soon">
+    <div class="film tall">
       <svg class="grid-lines" viewBox="0 0 800 450" preserveAspectRatio="none" aria-hidden="true"><g stroke="#F4EFE6" stroke-width="1" fill="none"><line x1="0" y1="112" x2="800" y2="112"/><line x1="0" y1="225" x2="800" y2="225"/><line x1="0" y1="338" x2="800" y2="338"/><line x1="200" y1="0" x2="200" y2="450"/><line x1="400" y1="0" x2="400" y2="450"/><line x1="600" y1="0" x2="600" y2="450"/></g></svg>
-      <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <span class="frule"></span>
       <span class="ft">Why Markets Actually Move — The MAISON YR Film</span>
       <span class="fl">~4 min · The method, the desk, the record — in one sitting</span>
-      <span class="fs">Landing soon</span>
+      <span class="fn">In the cut. It goes up when it is finished — and not a day before. Nothing here is waiting on it: the record, the receipts and two whole chapters of the Macro School are already readable.</span>
+      <span class="fs">In the cut</span>
     </div>
     <div class="ctapair">
       <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
@@ -508,6 +537,35 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <p>Markets evolve. Conditions change. Narratives rotate. Traders who rely on external signals struggle the moment the environment shifts. MAISON YR develops traders capable of understanding markets independently — reasoning, structure, adaptability. The objective is not dependency. The objective is understanding.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<hr class="hair"/>
+
+<!-- ============ THE FREE DOOR — THE MACRO SCHOOL ============ -->
+<section id="school" class="story-bg">
+  <div class="wrap">
+    <div class="head center reveal">
+      <div class="kicker center">The Free Door</div>
+      <h2>Two chapters of the Macro School are <em>already open.</em></h2>
+      <p style="margin-top:18px">The Macro School is twenty-one written chapters — the macro layer, taught the way this desk actually reads it. Two of them sit open in the free Lobby. Whole chapters, start to finish, exactly as members read them. Not samples. Not teasers. Nothing to unlock, no call to book, no card.</p>
+    </div>
+    <div>
+      <div class="pillar-row reveal">
+        <div class="pillar-num">01</div>
+        <h3>The Regime — The Anchor Of The Macro Layer</h3>
+        <p>Before a chart means anything, you have to name the environment you are standing in. This chapter runs gold through a war to make the point: the same asset, carrying the same label, behaving in opposite directions twice. Read it and you will stop asking what an asset "is" and start asking what regime is live.</p>
+      </div>
+      <div class="pillar-row reveal">
+        <div class="pillar-num">02</div>
+        <h3>The VIX — The Price Of Fear</h3>
+        <p>What the volatility index is actually quoting, and how to read it as a number instead of a mood — including the divide-by-16 rule, the 2018 volatility unwind traced step by step, and why a spike and a slow grind higher are two completely different messages.</p>
+      </div>
+    </div>
+    <div class="btns" style="justify-content:center;margin-top:42px">
+      <a class="btn btn-ghost" href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener">Read Both Chapters — Free →</a>
+    </div>
+    <p class="microline" style="text-align:center">Free · No card · The other nineteen chapters live on the Floor</p>
   </div>
 </section>
 
@@ -594,21 +652,22 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 
       <!-- FLOOR -->
       <div class="prog floor reveal">
-        <div class="chip">Join-Direct · Founding Window Open</div>
+        <div class="chip">Join-Direct · Founding Rate Until 24 Aug 2026</div>
         <div class="pt">The YR Live Trading Floor</div>
         <div class="pi">The live operating environment</div>
         <p class="perfline">April +50.67% · May +29.35% · June +49.02% · July +47.26% — every trade behind those numbers was posted to the desk BEFORE entry. That is the standard, and you watch it run live.</p>
         <div class="filmslot">
-          <div class="film" role="img" aria-label="The Floor in 90 Seconds — landing soon">
-            <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <div class="film">
+            <span class="frule"></span>
             <span class="ft">The Floor in 90 Seconds</span>
             <span class="fl">90 sec · One trade, start to finish</span>
-            <span class="fs">Landing soon</span>
+            <span class="fn">In the cut — up when it is finished.</span>
+            <span class="fs">In the cut</span>
           </div>
         </div>
         <div class="shot">
           <img width="1600" height="1231" src="assets/proof/floor_scale_shot.jpg" alt="Inside the YR Live Trading Floor classroom on Skool" loading="lazy"/>
-          <div class="cap">The Floor — live right now · 13 rooms · 67 pages</div>
+          <div class="cap">The Floor — live right now · 14 rooms · 96 pages</div>
         </div>
         <div class="mod">
           <div class="mh">The Trades</div>
@@ -649,7 +708,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         </div>
         <div class="advbox">
           <div class="at">The Founding Advantage</div>
-          <p>While the Program releases, active Floor members receive every chapter as it goes live — the full $4,000 Program, included at the Floor rate. The founding rate is $199/month and it locks for life. This membership settles at $347 once the house is fully built — founding members never pay the difference. Once the Program is fully released, this no longer applies to new members.</p>
+          <p>While the Program releases, active Floor members receive every chapter as it goes live — the full $4,000 Program, included at the Floor rate. The founding rate is $199/month and it locks for life. <span class="strong" style="color:var(--navy)">It ends on 24 August 2026, midnight Los Angeles. After that the Floor is $347.</span> Founding members never pay the difference. Once the Program is fully released, the included-chapters advantage no longer applies to new members either.</p>
         </div>
         <div class="foot">
           <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
@@ -684,7 +743,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
 
     <div class="cardgrid">
-      <div class="rcard reveal lb" data-full="assets/cards/april_2026_report.jpg" style="cursor:zoom-in">
+      <div class="rcard reveal lb" data-full="assets/cards/april_2026_report.jpg" style="cursor:zoom-in" role="button" tabindex="0">
         <div class="rhead"><span class="rmonth">April 2026</span><span class="rtag">Performance Report</span></div>
         <div class="rmain"><span class="rret">+50.67%</span><span class="rrl">Total Return</span></div>
         <div class="rstats">
@@ -695,7 +754,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         </div>
         <div class="rfoot"><span>Best trade · USDJPY</span><b>+10.05R</b></div>
       </div>
-      <div class="rcard reveal lb" data-full="assets/cards/may_2026_report.jpg" style="cursor:zoom-in">
+      <div class="rcard reveal lb" data-full="assets/cards/may_2026_report.jpg" style="cursor:zoom-in" role="button" tabindex="0">
         <div class="rhead"><span class="rmonth">May 2026</span><span class="rtag">Performance Report</span></div>
         <div class="rmain"><span class="rret">+29.35%</span><span class="rrl">Total Return</span></div>
         <div class="rstats">
@@ -706,7 +765,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         </div>
         <div class="rfoot"><span>Best trade · US30</span><b>+7R</b></div>
       </div>
-      <div class="rcard reveal lb" data-full="assets/cards/june_2026_report.jpg" style="cursor:zoom-in">
+      <div class="rcard reveal lb" data-full="assets/cards/june_2026_report.jpg" style="cursor:zoom-in" role="button" tabindex="0">
         <div class="rhead"><span class="rmonth">June 2026</span><span class="rtag">Performance Report</span></div>
         <div class="rmain"><span class="rret">+49.02%</span><span class="rrl">Total Return</span></div>
         <div class="rstats">
@@ -717,7 +776,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         </div>
         <div class="rfoot"><span>Best trade · USDCHF</span><b>+9.12R</b></div>
       </div>
-      <div class="rcard reveal lb" data-full="assets/cards/july_2026_report.jpg" style="cursor:zoom-in">
+      <div class="rcard reveal lb" data-full="assets/cards/july_2026_report.jpg" style="cursor:zoom-in" role="button" tabindex="0">
         <div class="rhead"><span class="rmonth">July 2026</span><span class="rtag">Performance Report</span></div>
         <div class="rmain"><span class="rret">+47.26%</span><span class="rrl">Total Return</span></div>
         <div class="rstats">
@@ -739,20 +798,21 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
 
     <div class="closes reveal">
-      <div class="ch">Latest closes from the desk · July–August 2026</div>
-      <div class="closerow"><span>CADJPY · SELL · Months-held BoJ-normalization thesis · TP hit</span><span class="cr">+15.24R · Closed</span></div>
-      <div class="closerow"><span>USDJPY · SELL · Yen thesis + confirmed joint intervention · TP hit</span><span class="cr">+14.83R · Closed</span></div>
-      <div class="closerow"><span>AUDCHF · BUY · Two-month range-break thesis · trailed out</span><span class="cr">+9.5R · Closed</span></div>
-      <div class="closerow"><span>US30 · BUY · Re-entry at the same price after BE · TP hit</span><span class="cr">+6R · Closed</span></div>
+      <div class="ch">Latest closes from the desk</div>
+      <p class="cnote">Read the dates. Only the 22 July close sits inside the four months above — the three that closed on 3 August land in the August book, and they will be counted there when August is reviewed. Nothing on this page adds them to +176.30%.</p>
+      <div class="closerow"><span>CADJPY · SELL · Months-held BoJ-normalization thesis · TP hit<span class="cd">Closed 3 Aug 2026 · August book</span></span><span class="cr">+15.24R</span></div>
+      <div class="closerow"><span>USDJPY · SELL · Yen thesis + confirmed joint intervention · TP hit<span class="cd">Closed 3 Aug 2026 · August book</span></span><span class="cr">+14.83R</span></div>
+      <div class="closerow"><span>US30 · BUY · Re-entry at the same price after BE · TP hit<span class="cd">Closed 3 Aug 2026 · August book</span></span><span class="cr">+6R</span></div>
+      <div class="closerow"><span>AUDCHF · BUY · Two-month range-break thesis · trailed out<span class="cd">Closed 22 Jul 2026 · inside the July card above</span></span><span class="cr">+9.5R</span></div>
     </div>
 
     <div class="member-hero reveal" style="margin-top:44px">
       <div>
         <div class="kicker" style="margin-bottom:14px">The Redemption Arc</div>
         <h3>Same thesis. <em>Posted both times.</em></h3>
-        <p>USDJPY short at 163 — stopped for −1R, catalysts named publicly the day it was posted. The desk didn't hide it, and the thesis didn't change. When the BoJ shifted 8-1 and the joint intervention landed, the same short paid +14.83R. The loss was posted before entry. So was the win. That's the whole point of the record.</p>
+        <p>USDJPY short at 163 — stopped for −1R on 28 July 2026, catalysts named publicly the day it was posted. The desk didn't hide it, and the thesis didn't change. When the BoJ shifted 8-1 and the joint intervention landed, the same short paid +14.83R on 3 August 2026. The loss was posted before entry. So was the win. That's the whole point of the record.</p>
       </div>
-      <div class="tr-img lb" data-full="assets/track/receipt_51_usdjpy.jpg"><img width="900" height="1312" src="assets/track/receipt_51_usdjpy.jpg" alt="Receipt 51 — USDJPY +14.83R, posted before entry" loading="lazy"/></div>
+      <div class="tr-img lb" data-full="assets/receipts/receipt_51_usdjpy.jpg" role="button" tabindex="0"><img width="1080" height="1575" src="assets/receipts/receipt_51_usdjpy.jpg" alt="Receipt Nº 51 — USDJPY sell, closed 3 August 2026, +14.83R, posted before entry" loading="lazy"/></div>
     </div>
 
     <p class="disc reveal" style="margin-top:40px">Said plainly: past results do not guarantee future results. Hard months will come, and they will be reviewed with the same transparency. The framework is the product — not the streak.</p>
@@ -765,20 +825,21 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
   <div class="wrap">
     <div class="head reveal">
       <div class="kicker">The Integrity Rule</div>
-      <h2>The desk keeps receipts. <em>51 of them.</em></h2>
-      <p style="margin-top:16px">A trade only counts if it was posted to the desk before entry. No advance notice, no entry in the record — ever. Every receipt below is a real desk post, timestamped, from the live months. A sample of the album:</p>
+      <h2>The desk keeps <em>receipts.</em></h2>
+      <p style="margin-top:16px">A trade counts on this record only if it was posted before entry, or called live with members watching it happen. Zero advance notice means it does not count — winners included. Every receipt below is a real desk post, dated, and every one of them matches a row on the monthly report card above. Wins and losses, eight from the album:</p>
     </div>
     <div class="rstrip reveal">
-      <div class="rt lb" data-full="assets/receipts/receipt_01_us100_skool.jpg"><img width="900" height="1379" src="assets/receipts/receipt_01_us100_skool.jpg" alt="Desk receipt — US100 posted before entry" loading="lazy"/><div class="cap">Receipt 01 · US100</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_08_usdchf_skool.jpg"><img width="900" height="1440" src="assets/receipts/receipt_08_usdchf_skool.jpg" alt="Desk receipt — USDCHF posted before entry" loading="lazy"/><div class="cap">Receipt 08 · USDCHF</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_20_xauusd_skool.jpg"><img width="900" height="1279" src="assets/receipts/receipt_20_xauusd_skool.jpg" alt="Desk receipt — XAUUSD posted before entry" loading="lazy"/><div class="cap">Receipt 20 · XAUUSD</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_22_cadjpy_skool.jpg"><img width="900" height="1308" src="assets/receipts/receipt_22_cadjpy_skool.jpg" alt="Desk receipt — CADJPY posted before entry" loading="lazy"/><div class="cap">Receipt 22 · CADJPY</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_33_audchf_skool.jpg"><img width="900" height="1315" src="assets/receipts/receipt_33_audchf_skool.jpg" alt="Desk receipt — AUDCHF posted before entry" loading="lazy"/><div class="cap">Receipt 33 · AUDCHF</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_38_eurusd_skool.jpg"><img width="900" height="1330" src="assets/receipts/receipt_38_eurusd_skool.jpg" alt="Desk receipt — EURUSD posted before entry" loading="lazy"/><div class="cap">Receipt 38 · EURUSD</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_44_xagusd_skool.jpg"><img width="900" height="1335" src="assets/receipts/receipt_44_xagusd_skool.jpg" alt="Desk receipt — XAGUSD posted before entry" loading="lazy"/><div class="cap">Receipt 44 · XAGUSD</div></div>
-      <div class="rt lb" data-full="assets/receipts/receipt_49_us30_skool.jpg"><img width="900" height="1312" src="assets/receipts/receipt_49_us30_skool.jpg" alt="Desk receipt — US30 posted before entry" loading="lazy"/><div class="cap">Receipt 49 · US30</div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_03_usdjpy.jpg" role="button" tabindex="0"><img width="1080" height="1669" src="assets/receipts/receipt_03_usdjpy.jpg" alt="Receipt Nº 03 — USDJPY sell, closed 30 April 2026, +10.05R" loading="lazy"/><div class="cap">Nº 03 · USDJPY · 30 Apr 2026<span class="res">+10.05R</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_09_usdchf.jpg" role="button" tabindex="0"><img width="1080" height="1523" src="assets/receipts/receipt_09_usdchf.jpg" alt="Receipt Nº 09 — USDCHF buy, closed 19 May 2026, +5.45R" loading="lazy"/><div class="cap">Nº 09 · USDCHF · 19 May 2026<span class="res">+5.45R</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_14_usdchf.jpg" role="button" tabindex="0"><img width="1080" height="1579" src="assets/receipts/receipt_14_usdchf.jpg" alt="Receipt Nº 14 — USDCHF buy, closed 11 June 2026, +9.12R" loading="lazy"/><div class="cap">Nº 14 · USDCHF · 11 Jun 2026<span class="res">+9.12R</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_16_audchf.jpg" role="button" tabindex="0"><img width="1080" height="1608" src="assets/receipts/receipt_16_audchf.jpg" alt="Receipt Nº 16 — AUDCHF buy, closed 17 June 2026, stopped for −1R" loading="lazy"/><div class="cap">Nº 16 · AUDCHF · 17 Jun 2026<span class="res down">−1.00R · stopped</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_20_cadjpy.jpg" role="button" tabindex="0"><img width="1080" height="1570" src="assets/receipts/receipt_20_cadjpy.jpg" alt="Receipt Nº 20 — CADJPY sell, closed 18 June 2026, +4R" loading="lazy"/><div class="cap">Nº 20 · CADJPY · 18 Jun 2026<span class="res">+4.00R</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_32_us100.jpg" role="button" tabindex="0"><img width="1080" height="1577" src="assets/receipts/receipt_32_us100.jpg" alt="Receipt Nº 32 — US100 sell, closed 30 June 2026, stopped for −1R" loading="lazy"/><div class="cap">Nº 32 · US100 · 30 Jun 2026<span class="res down">−1.00R · stopped</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_44_audchf.jpg" role="button" tabindex="0"><img width="1080" height="1705" src="assets/receipts/receipt_44_audchf.jpg" alt="Receipt Nº 44 — AUDCHF buy, closed 22 July 2026, +9.5R" loading="lazy"/><div class="cap">Nº 44 · AUDCHF · 22 Jul 2026<span class="res">+9.50R</span></div></div>
+      <div class="rt lb" data-full="assets/receipts/receipt_48_eurusd.jpg" role="button" tabindex="0"><img width="1080" height="1599" src="assets/receipts/receipt_48_eurusd.jpg" alt="Receipt Nº 48 — EURUSD buy, closed 30 July 2026, +2.5R" loading="lazy"/><div class="cap">Nº 48 · EURUSD · 30 Jul 2026<span class="res">+2.50R</span></div></div>
     </div>
-    <div class="more reveal"><span>Tap any receipt to inspect it</span><a href="https://www.skool.com/maison-yr-trading" target="_blank" rel="noopener">The full 51-receipt album lives in the free Lobby →</a></div>
+    <div class="more reveal"><span>Tap any receipt to inspect it</span><a href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener">The full receipt album lives in the free Lobby →</a></div>
+    <p class="disc reveal" style="color:rgba(244,239,230,.55);margin-top:22px">One thing the album cannot do is flatter the record: it holds fewer trades than the record does. Trades called live inside a Zoom session never reach the public feed, most break-evens were never screenshotted, and the earliest months were barely photographed. The wall understates the book — which is the direction an honest record errs in.</p>
   </div>
 </section>
 
@@ -787,8 +848,8 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
   <div class="wrap">
     <div class="head reveal">
       <div class="kicker">The Track Record</div>
-      <h2>Eight years. <em>No filter.</em></h2>
-      <p style="margin-top:16px">From the first live charts in 2018 through multiple prop-firm passes to the early results of MAISON YR's first members. Real accounts. Real data. Full context.</p>
+      <h2>Eight years. <em>Documented.</em></h2>
+      <p style="margin-top:16px">From the first live charts in 2018 through multiple prop-firm passes to the early results of MAISON YR's first members. Real accounts. Real data. Full context. Only the years with an exhibit are listed — the rest were spent building the framework with nothing worth showing you.</p>
     </div>
     <div class="tr-item reveal">
       <div class="tr-year">2018</div>
@@ -805,25 +866,24 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <p>Passed FTMO Verification in 2021 — the first funded-account evaluation. First reward payout issued by FTMO on September 14, 2021. The proof, not the promise.</p>
       </div>
       <div class="tr-imgs">
-        <div class="tr-img lb" data-full="assets/track/yanis_ftmo_verification.jpg"><img width="1200" height="2122" src="assets/track/yanis_ftmo_verification.jpg" alt="Yanis Rucquois — FTMO Passed Verification certificate" loading="lazy"/></div>
-        <div class="tr-img lb" data-full="assets/track/ftmo_first_reward_2021.jpg"><img width="1060" height="1572" src="assets/track/ftmo_first_reward_2021.jpg" alt="First FTMO reward — September 14, 2021" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/yanis_ftmo_verification.jpg" role="button" tabindex="0"><img width="1200" height="2122" src="assets/track/yanis_ftmo_verification.jpg" alt="Yanis Rucquois — FTMO Passed Verification certificate" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/ftmo_first_reward_2021.jpg" role="button" tabindex="0"><img width="1060" height="1572" src="assets/track/ftmo_first_reward_2021.jpg" alt="First FTMO reward — September 14, 2021" loading="lazy"/></div>
       </div>
     </div>
     <div class="tr-item reveal">
       <div class="tr-year">2022</div>
       <div>
-        <h3>$50K funded. Scaled to $210K in 3 months.</h3>
-        <p>The $50K trader agreement, signed December 29, 2021. Over the following months the account was scaled to $210,000+ with $166,963 in profit — during the USD surge driven by the Fed rate cycle. The raw account history, deposit to balance, is right here.</p>
+        <h3>Funded account. Scaled <em>+333.93%</em> in three months of 2022.</h3>
+        <p>The trader agreement, signed December 29, 2021. Over the following three months of 2022 the funded account returned +333.93% — a 4.21x on the starting balance — during the USD surge driven by the Fed rate cycle. The raw account history, deposit to closing balance, is right here. Performance on this page is stated in percent and R; the exhibit carries the rest.</p>
         <div class="tr-stats">
-          <div class="tr-stat"><div class="n mono">$210,744</div><div class="l">Account Balance · Post-Scaling</div></div>
-          <div class="tr-stat"><div class="n mono">+$166,963</div><div class="l">Total Profit</div></div>
-          <div class="tr-stat"><div class="n mono">$50,000</div><div class="l">Starting Deposit</div></div>
+          <div class="tr-stat"><div class="n mono">+333.93%</div><div class="l">Return · Funded Account</div></div>
+          <div class="tr-stat"><div class="n mono">4.21x</div><div class="l">Starting Balance · Scaled</div></div>
           <div class="tr-stat"><div class="n mono">3 Months</div><div class="l">Timeframe</div></div>
         </div>
       </div>
       <div class="tr-imgs">
-        <div class="tr-img lb" data-full="assets/track/agreement_50k_2021.jpg"><img width="596" height="842" src="assets/track/agreement_50k_2021.jpg" alt="The $50K trader agreement — signed December 29, 2021" loading="lazy"/></div>
-        <div class="tr-img lb" data-full="assets/track/mt5_2022_history.jpg"><img width="1200" height="2523" src="assets/track/mt5_2022_history.jpg" alt="Raw 2022 account history — $50,000 deposit, $166,963 profit, $210,744 balance" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/agreement_50k_2021.jpg" role="button" tabindex="0"><img width="596" height="842" src="assets/track/agreement_50k_2021.jpg" alt="The funded trader agreement — signed December 29, 2021" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/mt5_2022_history.jpg" role="button" tabindex="0"><img width="1200" height="2523" src="assets/track/mt5_2022_history.jpg" alt="Raw 2022 funded-account history — deposit through to closing balance" loading="lazy"/></div>
       </div>
     </div>
     <div class="tr-item reveal">
@@ -833,8 +893,8 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <p>Certified Professional Trader with Fidelcrest — $50,000 account, January 2023. FTMO Overall Rewards, Gold tier, running consistently through the year — 80% profit split, every cycle.</p>
       </div>
       <div class="tr-imgs">
-        <div class="tr-img lb" data-full="assets/track/fidelcrest_cert_2023.jpg"><img width="1053" height="822" src="assets/track/fidelcrest_cert_2023.jpg" alt="Fidelcrest Professional Trader certificate — $50,000 account, January 2023" loading="lazy"/></div>
-        <div class="tr-img lb" data-full="assets/track/ftmo_gold_rewards_2023.jpg"><img width="842" height="1150" src="assets/track/ftmo_gold_rewards_2023.jpg" alt="FTMO Overall Rewards Gold — 2023" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/fidelcrest_cert_2023.jpg" role="button" tabindex="0"><img width="1053" height="822" src="assets/track/fidelcrest_cert_2023.jpg" alt="Fidelcrest Professional Trader certificate — $50,000 account, January 2023" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/track/ftmo_gold_rewards_2023.jpg" role="button" tabindex="0"><img width="842" height="1150" src="assets/track/ftmo_gold_rewards_2023.jpg" alt="FTMO Overall Rewards Gold — 2023" loading="lazy"/></div>
       </div>
     </div>
     <div class="tr-item reveal">
@@ -843,17 +903,17 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <h3>Consistent monthly payouts through 2024.</h3>
         <p>2024 continued the same pattern of disciplined execution and monthly payout requests across changing macro environments — including the JPY carry unwind and the US election cycle.</p>
       </div>
-      <div class="tr-img lb" data-full="assets/track/ftmo_reward_2024.jpg"><img width="842" height="1150" src="assets/track/ftmo_reward_2024.jpg" alt="FTMO reward — June 15, 2024" loading="lazy"/></div>
+      <div class="tr-img lb" data-full="assets/track/ftmo_reward_2024.jpg" role="button" tabindex="0"><img width="842" height="1150" src="assets/track/ftmo_reward_2024.jpg" alt="FTMO reward — June 15, 2024" loading="lazy"/></div>
     </div>
     <div class="tr-item reveal">
       <div class="tr-year">2026</div>
       <div>
         <h3>MAISON YR. The record goes public.</h3>
-        <p>April 2026 — the house opens, and the standard becomes public: every trade posted before entry, every month reviewed on camera, wins and losses, in percent. Four months in: +176.30% across 90 documented trades. The two largest receipts on the wall, right here:</p>
+        <p>April 2026 — the house opens, and the standard becomes public: every trade posted before entry, every month reviewed on camera, wins and losses, in percent. Four months in: +176.30% across 90 documented trades. The two largest single trades inside that record, right here — USDJPY on 30 April, the day the Bank of Japan intervened, taken in two legs of +6.5R and +3.55R; and AUDCHF on 22 July, a two-month range-break thesis trailed out.</p>
       </div>
       <div class="tr-imgs">
-        <div class="tr-img lb" data-full="assets/track/receipt_50_cadjpy.jpg"><img width="900" height="1308" src="assets/track/receipt_50_cadjpy.jpg" alt="Receipt 50 — CADJPY +15.24R, posted before entry" loading="lazy"/></div>
-        <div class="tr-img lb" data-full="assets/track/receipt_51_usdjpy.jpg"><img width="900" height="1312" src="assets/track/receipt_51_usdjpy.jpg" alt="Receipt 51 — USDJPY +14.83R, posted before entry" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/receipts/receipt_03_usdjpy.jpg" role="button" tabindex="0"><img width="1080" height="1669" src="assets/receipts/receipt_03_usdjpy.jpg" alt="Receipt Nº 03 — USDJPY sell, closed 30 April 2026, +10.05R" loading="lazy"/></div>
+        <div class="tr-img lb" data-full="assets/receipts/receipt_44_audchf.jpg" role="button" tabindex="0"><img width="1080" height="1705" src="assets/receipts/receipt_44_audchf.jpg" alt="Receipt Nº 44 — AUDCHF buy, closed 22 July 2026, +9.5R" loading="lazy"/></div>
       </div>
     </div>
   </div>
@@ -867,20 +927,21 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <h2>Football. Banking. Markets. <em>MAISON YR.</em></h2>
     </div>
     <div class="story-film reveal">
-      <div class="film" role="img" aria-label="The Story — From the Pitch to the Desk — landing soon">
-        <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <div class="film">
+        <span class="frule"></span>
         <span class="ft">The Story — From the Pitch to the Desk</span>
         <span class="fl">~2 min · Football. Banking. Markets. MAISON YR.</span>
-        <span class="fs">Landing soon</span>
+        <span class="fn">In the cut — up when it is finished. The written version is below, and it is the same story.</span>
+        <span class="fs">In the cut</span>
       </div>
     </div>
     <div class="letter reveal">
-      <p>I started football at three years old. I left my parents' house at twelve to pursue it, and turned professional at fifteen. The game took me across the world — France, the Netherlands, Belgium, Greece, the United States.</p>
+      <p>I started football at three years old. I left my parents' house at twelve to pursue it, and turned professional at sixteen. The game took me across the world — France, the Netherlands, Belgium, Greece, England, the United States.</p>
       <p>I started trading at sixteen, while still playing. I joined a trading formation in Belgium — in person, a full year. It was technical analysis only: charts, patterns, indicators. After that year, my account was up and down — mostly down. That failure taught me the most important lesson of my career: <span class="strong">charts don't move markets. The macro does.</span> Every market is correlated — stocks, forex, gold, oil, crypto — and there is always a reason price moves. The course never taught me the reason.</p>
       <p>So I went to find it where it actually lives. I studied economics, earned an internship at a bank, and became an analyst — the person who reads everything impacting markets and feeds it up the chain to the traders. Then I became a trader for the bank. Then I left to trade my own capital.</p>
-      <p>Since then, trading has changed my life. I've generated over $5M in trading profits — and I've never touched that capital. Not once. The math is simple: 50% on $10M is $5M. 50% on $1M is $500K. Same performance, different outcome. My capital compounds toward one goal — generational wealth — and my lifestyle is funded elsewhere. Never from the trading account.</p>
-      <p>In 2023, still playing professionally, I was diagnosed with arthritis in my ankle. Doctors told me to stop. I didn't listen. Four surgeries later, the ankle still hurts, the arthritis isn't leaving, and the level I played at isn't coming back. Last year, I retired. Football had been my life since I was three years old. Losing it left a hole.</p>
-      <p>Then the #1 trading app on the App Store reached out and asked me to become a mentor. I started sharing my trades there — and understood something quickly: giving people trades will never make them independent. Signals don't build skill. What builds skill is the reality of trading — how banks trade, how institutions trade: <span class="strong">fundamentals first, macro first, knowing WHY price moves before you ever touch an entry.</span> That became the new passion.</p>
+      <p>Since then, trading has changed my life. I've generated over $5M in trading profits — and I've never touched that capital. Not once. My capital compounds toward one goal — generational wealth — and my lifestyle is funded elsewhere. Never from the trading account.</p>
+      <p>In 2023, still playing professionally, I was diagnosed with arthritis in my ankle. Doctors told me to stop. I didn't listen. Five surgeries later, the ankle still hurts, the arthritis isn't leaving, and the level I played at isn't coming back. Last year, I retired. Football had been my life since I was three years old. Losing it left a hole.</p>
+      <p>Then a major US trading platform reached out and asked me to become a mentor. I started sharing my trades there — and understood something quickly: giving people trades will never make them independent. Signals don't build skill. What builds skill is the reality of trading — how banks trade, how institutions trade: <span class="strong">fundamentals first, macro first, knowing WHY price moves before you ever touch an entry.</span> That became the new passion.</p>
       <p>MAISON YR launched in April 2026 with seven members — and then I closed the door. Not because it wasn't working: the quality was there from day one. But there was no structure to scale it yet. So for months, behind the scenes, I worked with those seven one-on-one, around the clock, while building the platform that could carry the standard without me standing over it.</p>
       <p>Now it can — and the door is open. The goal has never changed: make you financially free and independent in your trading. <span class="strong">Teach you to fish. That's the house.</span></p>
       <p class="sig">— Yanis Rucquois · Founder, MAISON YR</p>
@@ -898,36 +959,37 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
 
     <div class="story-film reveal">
-      <div class="film" role="img" aria-label="The Members — In Their Own Words — landing soon">
-        <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+      <div class="film">
+        <span class="frule"></span>
         <span class="ft">The Members — In Their Own Words</span>
         <span class="fl">2–3 min · Five members. Zero scripts. The first weeks inside.</span>
-        <span class="fs">Landing soon</span>
+        <span class="fn">In the cut — up when it is finished. Their written words, unedited, are directly below.</span>
+        <span class="fs">In the cut</span>
       </div>
     </div>
 
     <div class="member-hero reveal">
       <div>
         <h3>The first member. <em>Already funded.</em></h3>
-        <p>Nathan Serrano passed FTMO Verification in February 2026 — the Floor’s first funded member, trading firm capital. Not a 6-month case study. This is what happens when the framework is real and the member executes with discipline from day one.</p>
+        <p>Nathan Serrano passed FTMO Verification on 5 February 2026, trading firm capital — one of the seven Yanis worked with one-on-one before the house opened its doors in April. Not a 6-month case study. This is what happens when the framework is real and the member executes with discipline from day one.</p>
         <span class="verify">FTMO Verified · Feb 5, 2026</span>
       </div>
-      <div class="tr-img lb" data-full="assets/proof/nathan_ftmo_cert.jpg"><img width="1200" height="1200" src="assets/proof/nathan_ftmo_cert.jpg" alt="Nathan Serrano — FTMO Passed Verification certificate, February 5, 2026" loading="lazy"/></div>
+      <div class="tr-img lb" data-full="assets/proof/nathan_ftmo_cert.jpg" role="button" tabindex="0"><img width="1200" height="1200" src="assets/proof/nathan_ftmo_cert.jpg" alt="Nathan Serrano — FTMO Passed Verification certificate, February 5, 2026" loading="lazy"/></div>
     </div>
 
     <div class="grid reveal">
-      <div class="gtile lb" data-full="assets/proof/testimonial_alixson_main.jpg"><img width="1200" height="1150" src="assets/proof/testimonial_alixson_main.jpg" alt="Alixson — full testimonial" loading="lazy"/><div class="cap">Alixson · Testimonial</div></div>
-      <div class="gtile lb" data-full="assets/proof/alixson_first_payout.png"><img width="1600" height="878" src="assets/proof/alixson_first_payout.png" alt="Alixson — first payout post" loading="lazy"/><div class="cap">Alixson · First payout</div></div>
-      <div class="gtile lb" data-full="assets/proof/proof_withdrawal_approved.png"><img width="1600" height="418" src="assets/proof/proof_withdrawal_approved.png" alt="Withdrawal approved — proof" loading="lazy"/><div class="cap">Withdrawal · Approved</div></div>
-      <div class="gtile lb" data-full="assets/proof/testimonial_hugo.png"><img width="1597" height="914" src="assets/proof/testimonial_hugo.png" alt="Hugo — testimonial" loading="lazy"/><div class="cap">Hugo · Testimonial</div></div>
-      <div class="gtile lb" data-full="assets/proof/A9_hugo_dm.png"><img width="924" height="679" src="assets/proof/A9_hugo_dm.png" alt="Hugo — six pairs from one briefing" loading="lazy"/><div class="cap">Hugo · 6 pairs, one briefing</div></div>
-      <div class="gtile lb" data-full="assets/proof/A11_lucien_payout.jpg"><img width="901" height="1319" src="assets/proof/A11_lucien_payout.jpg" alt="Lucien — 27 trades, zero drawdown run" loading="lazy"/><div class="cap">Lucien · 27 trades · 0% drawdown</div></div>
-      <div class="gtile lb" data-full="assets/proof/testimonial_naomi.png"><img width="1597" height="949" src="assets/proof/testimonial_naomi.png" alt="Naomi — testimonial" loading="lazy"/><div class="cap">Naomi · Testimonial</div></div>
-      <div class="gtile lb" data-full="assets/proof/testimonial_nikolas.png"><img width="1597" height="665" src="assets/proof/testimonial_nikolas.png" alt="Nikolas — introduction" loading="lazy"/><div class="cap">Nikolas · Introduction</div></div>
-      <div class="gtile lb" data-full="assets/proof/exhibit_member_analysis_nzdchf.jpg"><img width="1200" height="2570" src="assets/proof/exhibit_member_analysis_nzdchf.jpg" alt="A member's own NZDCHF analysis" loading="lazy"/><div class="cap">A member's own NZDCHF analysis</div></div>
-      <div class="gtile lb" data-full="assets/proof/testimonial_alex_june.png"><img width="1597" height="724" src="assets/proof/testimonial_alex_june.png" alt="Alex — testimonial, June" loading="lazy"/><div class="cap">Alex · Testimonial</div></div>
-      <div class="gtile lb" data-full="assets/proof/testimonial_alex_200.png"><img width="1597" height="810" src="assets/proof/testimonial_alex_200.png" alt="Alex — nearly 200% of his starting balance, in his own words" loading="lazy"/><div class="cap">Alex · “Nearly 200% of my starting balance”</div></div>
-      <div class="gtile lb" data-full="assets/proof/A4_alixson_calm_tp.png"><img width="612" height="510" src="assets/proof/A4_alixson_calm_tp.png" alt="Alixson — NAS100 calm TP on funded account" loading="lazy"/><div class="cap">Alixson · Calm TP · Funded</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_alixson_main.jpg" role="button" tabindex="0"><img width="1200" height="1150" src="assets/proof/testimonial_alixson_main.jpg" alt="Alixson — full testimonial" loading="lazy"/><div class="cap">Alixson · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/alixson_first_payout.png" role="button" tabindex="0"><img width="1600" height="878" src="assets/proof/alixson_first_payout.png" alt="Alixson — first payout post" loading="lazy"/><div class="cap">Alixson · First payout</div></div>
+      <div class="gtile lb" data-full="assets/proof/proof_withdrawal_approved.png" role="button" tabindex="0"><img width="1600" height="418" src="assets/proof/proof_withdrawal_approved.png" alt="Withdrawal approved — proof" loading="lazy"/><div class="cap">Withdrawal · Approved</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_hugo.png" role="button" tabindex="0"><img width="1597" height="914" src="assets/proof/testimonial_hugo.png" alt="Hugo — testimonial" loading="lazy"/><div class="cap">Hugo · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/A9_hugo_dm.png" role="button" tabindex="0"><img width="924" height="679" src="assets/proof/A9_hugo_dm.png" alt="Hugo — six pairs from one briefing" loading="lazy"/><div class="cap">Hugo · 6 pairs, one briefing</div></div>
+      <div class="gtile lb" data-full="assets/proof/A11_lucien_payout.jpg" role="button" tabindex="0"><img width="901" height="1319" src="assets/proof/A11_lucien_payout.jpg" alt="Lucien — 27 trades, zero drawdown run" loading="lazy"/><div class="cap">Lucien · 27 trades · 0% drawdown</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_naomi.png" role="button" tabindex="0"><img width="1597" height="949" src="assets/proof/testimonial_naomi.png" alt="Naomi — testimonial" loading="lazy"/><div class="cap">Naomi · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_nikolas.png" role="button" tabindex="0"><img width="1597" height="665" src="assets/proof/testimonial_nikolas.png" alt="Nikolas — introduction" loading="lazy"/><div class="cap">Nikolas · Introduction</div></div>
+      <div class="gtile lb" data-full="assets/proof/exhibit_member_analysis_nzdchf.jpg" role="button" tabindex="0"><img width="1200" height="2570" src="assets/proof/exhibit_member_analysis_nzdchf.jpg" alt="A member's own NZDCHF analysis" loading="lazy"/><div class="cap">A member's own NZDCHF analysis</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_alex_june.png" role="button" tabindex="0"><img width="1597" height="724" src="assets/proof/testimonial_alex_june.png" alt="Alex — testimonial, June" loading="lazy"/><div class="cap">Alex · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_alex_200.png" role="button" tabindex="0"><img width="1597" height="810" src="assets/proof/testimonial_alex_200.png" alt="Alex — nearly 200% of his starting balance, in his own words" loading="lazy"/><div class="cap">Alex · “Nearly 200% of my starting balance”</div></div>
+      <div class="gtile lb" data-full="assets/proof/A4_alixson_calm_tp.png" role="button" tabindex="0"><img width="612" height="510" src="assets/proof/A4_alixson_calm_tp.png" alt="Alixson — NAS100 calm TP on funded account" loading="lazy"/><div class="cap">Alixson · Calm TP · Funded</div></div>
     </div>
 
     <div class="chipstrip reveal">This week on the desk: <b>EURJPY TP hit</b> · <b>USDJPY TP hit</b> · <b>6 concurrent pairs from one briefing</b></div>
@@ -948,8 +1010,8 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     <div class="teamgrid" style="grid-template-columns:1fr;max-width:660px;margin:0 auto">
       <div class="tcard reveal">
         <div class="tn">Yanis Rucquois</div>
-        <div class="tr">Founder &amp; Lead — Private Macro Investor</div>
-        <p>Macro-focused market analyst and investor specializing in Forex, institutional positioning, liquidity dynamics and macroeconomic market behavior. Yanis built MAISON YR after recognizing a fundamental disconnect between how most traders are taught to trade — and how markets actually function underneath the surface. Every trade on the desk is his, posted before entry. Every month is reviewed on camera. The house carries one voice and one standard.</p>
+        <div class="tr">Founder &amp; Lead — Institutional Trader</div>
+        <p>Institutional trader and macro investor specialising in Forex, institutional positioning, liquidity dynamics and macroeconomic market behaviour. Trained as a bank analyst feeding the market desk, then traded the bank's capital, before going independent. Yanis built MAISON YR after recognising a fundamental disconnect between how most traders are taught to trade — and how markets actually function underneath the surface. Every trade on the desk is his, posted before entry. Every month is reviewed on camera. The house carries one voice and one standard.</p>
         <div class="tags"><span>Macro</span><span>Institutional Flows</span><span>Forex</span><span>Central Banks</span></div>
       </div>
     </div>
@@ -973,7 +1035,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <h2>Two ways to join. <em>One standard.</em></h2>
     </div>
     <p class="pricing-intro reveal">The Live Trading Floor is join-direct — no call needed. The Complete Institutional Program and the bundle are discussed on a free fit check: structure before numbers — the right program depends on your level, your objectives, and where you are in your development.</p>
-    <div class="pquote reveal">"The main goal is to help every trader become independent and consistently profitable — unlike a lot of signal groups on social media that mainly make money from the commissions generated by your trades."<span class="by">— Hugo K. · Member</span></div>
+    <div class="pquote reveal">"The main goal is to help every trader become independent and consistently profitable."<span class="by">— Hugo K. · Member</span></div>
     <div class="prices">
       <div class="price reveal">
         <div class="pn">The Complete Institutional Program</div>
@@ -990,10 +1052,11 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <div class="foot"><a class="btn btn-ghost" href="https://calendly.com/maisonyr/fit-check" target="_blank" rel="noopener">Book a Free Fit Check →</a></div>
       </div>
       <div class="price hi reveal">
-        <div class="chip">Founding Window Open</div>
+        <div class="chip">Founding Rate Until 24 Aug 2026</div>
         <div class="pn">The YR Live Trading Floor</div>
         <div class="amt">$199<small>/month</small></div>
-        <p class="pnote">Founding rate — locks for life. Settles at $347 once the house is fully built; founding members never pay the difference. Cancel anytime.</p>
+        <p class="prate">Ends 24 Aug 2026<br/>Midnight Los Angeles<br/>Then $347/month</p>
+        <p class="pnote">Founding rate — locks for life. Join before the deadline and you keep $199 for as long as you stay; founding members never pay the difference. Cancel anytime.</p>
         <ul>
           <li>Every trade posted before entry, with the full reasoning</li>
           <li>Daily morning briefings + weekly macro research reports</li>
@@ -1019,7 +1082,12 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <div class="foot"><a class="btn btn-ghost" href="https://calendly.com/maisonyr/fit-check" target="_blank" rel="noopener">Book a Fit Check — Get Both →</a></div>
       </div>
     </div>
-    <p class="pmicro reveal">Floor: join directly, no call needed · Program &amp; bundle: discussed on your free fit check · No commitment · No pressure<br/>Founding members keep their rate for as long as they stay. No countdown, no games — the rate simply rises as the desk fills.</p>
+    <div class="deadline reveal">
+      <div class="dk">The Founding Rate — Stated Plainly</div>
+      <p class="dd">$199/month closes 24 August 2026, midnight Los Angeles.<br/>After that, the Floor is $347/month.</p>
+      <p class="dn">Join before then and $199 is your rate for as long as you stay — founding members never pay the difference. This is an announcement, not a tactic: no timer on this page, no seats-remaining counter, no rate that quietly returns next week. The date is the date, and the house will say so again when it moves.</p>
+    </div>
+    <p class="pmicro reveal">Floor: join directly, no call needed · Program &amp; bundle: discussed on your free fit check · No commitment · No pressure</p>
   </div>
 </section>
 
@@ -1035,17 +1103,18 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
     <div class="faq reveal">
       <details><summary><span class="num">01</span>What actually makes MAISON YR different?<span class="pl">+</span></summary><p class="a">MAISON YR is not built as a content business. It is built as a professional trading ecosystem. Every part is connected: the Course, the live sessions, the macro reports, the trade updates, the psychology work, the community structure and the execution process. Nothing is random. Nothing is based on hype. The objective is to develop traders capable of thinking independently in real market conditions — not traders dependent on someone else forever.</p></details>
-      <details><summary><span class="num">02</span>How much does it cost?<span class="pl">+</span></summary><p class="a">The YR Live Trading Floor is $199/month — the founding rate, locked for life for as long as you stay. It settles at $347 once the house is fully built; founding members never pay the difference. The Complete Institutional Program will sell separately at $4,000 when complete — while it releases, active Floor members receive every chapter, included. Cancel anytime. No call required to join.</p></details>
-      <details><summary><span class="num">03</span>Is MAISON YR beginner-friendly?<span class="pl">+</span></summary><p class="a">Yes — but it is not beginner-minded. The program starts from the foundations: market structure, execution, TradingView setup, risk management and macro basics. From the beginning, members are progressively introduced to macroeconomics, institutional positioning, liquidity, central-bank policy, execution discipline and the psychology behind professional decision making. Complete beginners follow the curriculum step by step; advanced traders usually realize quickly they were missing the structural side of markets entirely. New members start with "Your First 7 Days" — an exact roadmap — and two clear paths depending on whether you're brand new or already trading.</p></details>
-      <details><summary><span class="num">04</span>Why do most retail traders fail?<span class="pl">+</span></summary><p class="a">Because they learn trading backwards. Most retail education focuses on indicators, patterns, entries and social-media setups. But price is moved by central-bank policy, liquidity flows, institutional positioning, interest-rate expectations, macroeconomic shifts and large capital-allocation decisions. Without understanding those forces, traders spend years reacting to price instead of understanding why it moves. MAISON YR was built specifically to solve that problem.</p></details>
-      <details><summary><span class="num">05</span>Is this a signal service?<span class="pl">+</span></summary><p class="a">No. Trades are shared live with full transparency, but the objective is education and understanding — not blind copying. Every position includes macro reasoning, technical structure, risk management, execution logic, trade management and ongoing updates in real time. Members don't just see what is being traded — they understand why the position exists, what invalidates it, what confirms it, and how professional risk management is applied around it. Over time, members naturally develop their own analysis and execution process. That is the goal.</p></details>
-      <details><summary><span class="num">06</span>What do members actually get every week?<span class="pl">+</span></summary><p class="a">Daily market briefings before sessions open · every trade posted to the desk before entry, with full reasoning and live management · a minimum of two live Zoom sessions per week — often more — plus the Sunday Market Room · weekly institutional-style macro research reports · monthly performance reviews with the full report card · chaptered session replays and archives · psychology and execution discussions · private community access. The environment is active every week — not a static course library.</p></details>
-      <details><summary><span class="num">07</span>How important is psychology inside the program?<span class="pl">+</span></summary><p class="a">Extremely. Most traders don't fail because they lack a strategy — they fail because they can't execute consistently, can't manage emotions, overleverage, revenge trade, panic in drawdowns or abandon discipline under pressure. Psychology is integrated directly into the framework: execution discipline work, emotional control, cognitive-bias awareness, journaling structure, routine development, and intervention from a stress-management specialist focused on performance under pressure. Trading is not only analytical. It is behavioral.</p></details>
-      <details><summary><span class="num">08</span>How much time do I realistically need?<span class="pl">+</span></summary><p class="a">Less than you think — and you should keep your job. Inside, "The Floor Around Your Job" gives you honest time-budget plans: 20 minutes a day (the morning briefing and the desk check) · 1 hour a day (briefing, desk, and part of a session or replay) · weekends only (the Sunday Market Room, the weekly report, and chaptered replays). Positions are held for days, alerts do the watching, and every session is recorded. The process adapts to your life, not the other way around. The important part is consistency — not speed.</p></details>
-      <details><summary><span class="num">09</span>What happens during the fit check?<span class="pl">+</span></summary><p class="a">The fit check exists to make sure the fit is correct on both sides. It's not a high-pressure sales call — it's 30 minutes to see where you are and whether this is your environment: your current level, your goals, your experience, your mindset, and what you're actually looking for from trading. From there we determine whether MAISON YR is the right fit, which program makes sense, and your best starting point. The objective is long-term alignment — not forcing people into something that doesn't fit.</p></details>
-      <details><summary><span class="num">10</span>Who is MAISON YR NOT for?<span class="pl">+</span></summary><p class="a">People looking for overnight success, gambling, unrealistic promises, "100% win rate" systems or effortless money will not fit this environment. MAISON YR is built for people willing to learn seriously, think independently, stay disciplined and develop real long-term skill in the markets. That standard is what protects the quality of the ecosystem.</p></details>
-      <details><summary><span class="num">11</span>Can I cancel anytime?<span class="pl">+</span></summary><p class="a">Yes. The YR Live Trading Floor is a monthly subscription with no long-term obligation. The Complete Institutional Program is separate: one payment, lifetime access. Most members stay because of the environment, structure and long-term progression — not because they're locked into anything.</p></details>
-      <details><summary><span class="num">12</span>What exactly do founding members get?<span class="pl">+</span></summary><p class="a">Two things, both time-limited by nature. One: the founding rate, locked for life — the rate rises once founding spots fill, but founding members keep theirs for as long as they stay. Two: the Complete Institutional Program's content, included as it releases — once the Program is fully released, this no longer applies to new members. No countdown timers. No fake urgency. The window simply closes when the desk fills and the Program completes.</p></details>
+      <details><summary><span class="num">02</span>How much does it cost?<span class="pl">+</span></summary><p class="a">The YR Live Trading Floor is $199/month — the founding rate, locked for life for as long as you stay. That rate closes on 24 August 2026 at midnight Los Angeles time; after that the Floor is $347/month, and later $497. Join before the deadline and you keep $199 — founding members never pay the difference. The Complete Institutional Program will sell separately at $4,000 when complete — while it releases, active Floor members receive every chapter, included. Cancel anytime. No call required to join.</p></details>
+      <details><summary><span class="num">03</span>Is there anything I can read before I pay anything?<span class="pl">+</span></summary><p class="a">Yes, and it is not a teaser. The Macro School is twenty-one written chapters, and two of them — The Regime, and The VIX — sit open in the free Lobby, complete and unedited, exactly as members read them. The public receipt album and the four monthly report cards are in there too. No card, no call, no unlock. <a href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener" style="color:var(--wine);border-bottom:1px solid var(--wine)">Read the two open chapters →</a></p></details>
+      <details><summary><span class="num">04</span>Is MAISON YR beginner-friendly?<span class="pl">+</span></summary><p class="a">Yes — but it is not beginner-minded. The program starts from the foundations: market structure, execution, TradingView setup, risk management and macro basics. From the beginning, members are progressively introduced to macroeconomics, institutional positioning, liquidity, central-bank policy, execution discipline and the psychology behind professional decision making. Complete beginners follow the curriculum step by step; advanced traders usually realize quickly they were missing the structural side of markets entirely. New members start with "Your First 7 Days" — an exact roadmap — and two clear paths depending on whether you're brand new or already trading.</p></details>
+      <details><summary><span class="num">05</span>Why do most retail traders fail?<span class="pl">+</span></summary><p class="a">Because they learn trading backwards. Most retail education focuses on indicators, patterns, entries and social-media setups. But price is moved by central-bank policy, liquidity flows, institutional positioning, interest-rate expectations, macroeconomic shifts and large capital-allocation decisions. Without understanding those forces, traders spend years reacting to price instead of understanding why it moves. MAISON YR was built specifically to solve that problem.</p></details>
+      <details><summary><span class="num">06</span>Is this a signal service?<span class="pl">+</span></summary><p class="a">No. Trades are shared live with full transparency, but the objective is education and understanding — not blind copying. Every position includes macro reasoning, technical structure, risk management, execution logic, trade management and ongoing updates in real time. Members don't just see what is being traded — they understand why the position exists, what invalidates it, what confirms it, and how professional risk management is applied around it. Over time, members naturally develop their own analysis and execution process. That is the goal.</p></details>
+      <details><summary><span class="num">07</span>What do members actually get every week?<span class="pl">+</span></summary><p class="a">Daily market briefings before sessions open · every trade posted to the desk before entry, with full reasoning and live management · a minimum of two live Zoom sessions per week — often more — plus the Sunday Market Room · weekly institutional-style macro research reports · monthly performance reviews with the full report card · chaptered session replays and archives · psychology and execution discussions · private community access. The environment is active every week — not a static course library.</p></details>
+      <details><summary><span class="num">08</span>How important is psychology inside the program?<span class="pl">+</span></summary><p class="a">Extremely. Most traders don't fail because they lack a strategy — they fail because they can't execute consistently, can't manage emotions, overleverage, revenge trade, panic in drawdowns or abandon discipline under pressure. Psychology is integrated directly into the framework: execution discipline work, emotional control, cognitive-bias awareness, journaling structure, routine development, and intervention from a stress-management specialist focused on performance under pressure. Trading is not only analytical. It is behavioral.</p></details>
+      <details><summary><span class="num">09</span>How much time do I realistically need?<span class="pl">+</span></summary><p class="a">Less than you think — and you should keep your job. Inside, "The Floor Around Your Job" gives you honest time-budget plans: 20 minutes a day (the morning briefing and the desk check) · 1 hour a day (briefing, desk, and part of a session or replay) · weekends only (the Sunday Market Room, the weekly report, and chaptered replays). Positions are held for days, alerts do the watching, and every session is recorded. The process adapts to your life, not the other way around. The important part is consistency — not speed.</p></details>
+      <details><summary><span class="num">10</span>What happens during the fit check?<span class="pl">+</span></summary><p class="a">The fit check exists to make sure the fit is correct on both sides. It's not a high-pressure sales call — it's 30 minutes to see where you are and whether this is your environment: your current level, your goals, your experience, your mindset, and what you're actually looking for from trading. From there we determine whether MAISON YR is the right fit, which program makes sense, and your best starting point. The objective is long-term alignment — not forcing people into something that doesn't fit.</p></details>
+      <details><summary><span class="num">11</span>Who is MAISON YR NOT for?<span class="pl">+</span></summary><p class="a">People looking for overnight success, gambling, unrealistic promises, "100% win rate" systems or effortless money will not fit this environment. MAISON YR is built for people willing to learn seriously, think independently, stay disciplined and develop real long-term skill in the markets. That standard is what protects the quality of the ecosystem.</p></details>
+      <details><summary><span class="num">12</span>Can I cancel anytime?<span class="pl">+</span></summary><p class="a">Yes. The YR Live Trading Floor is a monthly subscription with no long-term obligation. The Complete Institutional Program is separate: one payment, lifetime access. Most members stay because of the environment, structure and long-term progression — not because they're locked into anything.</p></details>
+      <details><summary><span class="num">13</span>What exactly do founding members get?<span class="pl">+</span></summary><p class="a">Two things. One: the founding rate, locked for life — $199/month, kept for as long as you stay. Two: the Complete Institutional Program's content, included as it releases — once the Program is fully released, that no longer applies to new members. The founding rate closes 24 August 2026, midnight Los Angeles. After that the Floor is $347. Founding members keep $199 for as long as they stay. That is the whole mechanism, said once, with a date on it — there is no timer on this page and no seat counter, because the house announces a change rather than performing one.</p></details>
     </div>
   </div>
 </section>
@@ -1064,12 +1133,13 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
   <div class="wrap reveal" style="position:relative;z-index:1">
     <div class="kicker center" style="color:rgba(244,239,230,.8)">Ready to Begin</div>
     <h2>Stop chasing trades. <em>Start understanding markets.</em></h2>
-    <p>MAISON YR exists to bridge the gap between retail trading education and the realities of professional market participation. Built for serious traders. Not shortcut seekers. Join the Floor directly — you can be inside in two minutes. Want to talk it through first? The fit check is free, takes 30 minutes, and works both ways. Not a pitch. A fit check.</p>
+    <p>MAISON YR exists to bridge the gap between retail trading education and the realities of professional market participation. Built for serious traders. Not shortcut seekers. Join the Floor directly — you can be inside in two minutes. Want to talk it through first? The fit check is free, takes 30 minutes, and works both ways. Not a pitch. A fit check. And if you would rather read before you decide anything, two whole chapters of the Macro School are open in the free Lobby right now.</p>
     <div class="btns">
       <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
       <a class="btn btn-ghost" href="https://calendly.com/maisonyr/fit-check" target="_blank" rel="noopener">Book a Free Fit Check →</a>
+      <a class="btn btn-ghost" href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener">Read Two Chapters — Free →</a>
     </div>
-    <p class="microline">$199/month · founding rate, locks for life · no call required</p>
+    <p class="microline">$199/month · founding rate, locks for life · closes 24 August 2026, midnight Los Angeles · then $347 · no call required</p>
   </div>
 </section>
 
@@ -1082,6 +1152,8 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <a href="#receipts">Receipts</a>
         <a href="#team">Team</a>
         <a href="#pricing">Pricing</a>
+        <a href="/start/">Start Free</a>
+        <a href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener">Free Chapters</a>
         <a href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor</a>
       </div>
     </div>
@@ -1094,7 +1166,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 <!-- ============ STICKY JOIN BAR ============ -->
 <div id="joinbar" role="complementary">
   <div class="wrap">
-    <span class="jt"><b>The Floor</b> · $199 founding — locks for life <span class="opt">· every trade posted before entry</span></span>
+    <span class="jt"><b>The Floor</b> · $199 founding — ends 24 Aug, then $347 <span class="opt">· locks for life · every trade posted before entry</span></span>
     <span style="display:flex;align-items:center;gap:10px">
       <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join direct →</a>
       <button class="close" aria-label="Dismiss">✕</button>
@@ -1127,11 +1199,12 @@ addEventListener('scroll',function(){
   bar.classList.toggle('show',scrollY>1100 && (innerHeight+scrollY)<document.body.scrollHeight-600);
 },{passive:true});
 bar.querySelector('.close').addEventListener('click',function(){dismissed=true;bar.classList.remove('show')});
-// mobile menu
+// mobile menu — the burger is a disclosure control, so it announces its state
 var burger=document.getElementById('burger'),menu=document.getElementById('mobilemenu');
-burger.addEventListener('click',function(){menu.classList.toggle('open')});
-menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
-// lightbox (keyboard accessible)
+function setMenu(open){menu.classList.toggle('open',open);burger.setAttribute('aria-expanded',open?'true':'false')}
+burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+// lightbox (keyboard accessible, focus trapped while open)
 var lbx=document.getElementById('lightbox'),lbimg=lbx.querySelector('img'),lbxClose=lbx.querySelector('.x'),lastLb=null;
 function openLb(el){
   lbimg.src=el.getAttribute('data-full');
@@ -1139,14 +1212,15 @@ function openLb(el){
   lastLb=el; lbx.classList.add('open'); lbxClose.focus();
 }
 document.querySelectorAll('.lb').forEach(function(el){
-  el.setAttribute('tabindex','0'); el.setAttribute('role','button');
   el.addEventListener('click',function(){openLb(el)});
   el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLb(el)}});
 });
 function closeLb(){lbx.classList.remove('open');lbimg.src='';if(lastLb){lastLb.focus();lastLb=null}}
 lbx.addEventListener('click',closeLb);
-lbx.querySelector('.x').addEventListener('click',closeLb);
-addEventListener('keydown',function(e){if(e.key==='Escape'){closeLb();menu.classList.remove('open')}});
+lbxClose.addEventListener('click',function(e){e.stopPropagation();closeLb()});
+// the dialog has exactly one focusable control, so trapping is: keep Tab on it
+lbx.addEventListener('keydown',function(e){if(e.key==='Tab'){e.preventDefault();lbxClose.focus()}});
+addEventListener('keydown',function(e){if(e.key==='Escape'){closeLb();setMenu(false)}});
 </script>
 </body>
 </html>
