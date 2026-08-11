@@ -161,6 +161,13 @@ details.acc .accbody{padding:14px 0 4px}
 .advbox p{font-size:14px;color:var(--soft)}
 .prog .foot{margin-top:auto;padding-top:10px}
 .prog .note{font-size:12.5px;color:var(--faint);margin-top:14px;line-height:1.6}
+/* FILM SLOTS — CSS ships now, markup stays commented until a film is cut.
+   To go live: uncomment the block and drop the embed URL into the iframe src. */
+.film{border:1px solid var(--line);background:var(--cream2);margin:26px 0}
+.film .frame{position:relative;width:100%;aspect-ratio:16/9;background:var(--navy)}
+.film .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.film .cap{font-family:var(--label);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:11px 14px;border-top:1px solid var(--line-soft)}
+.film.tight{margin:18px 0}
 .shot{border:1px solid var(--line);margin-bottom:22px}
 .shot img{width:100%}
 .shot .cap{font-family:var(--label);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:10px 14px;border-top:1px solid var(--line-soft);background:var(--cream2)}
@@ -382,7 +389,6 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     <a class="mark" href="#top">MAISON&nbsp;YR</a>
     <div class="navlinks">
       <a href="#method">The Method</a>
-      <a href="#school">Free Chapters</a>
       <a href="#programs">Programs</a>
       <a href="#results">Results</a>
       <a href="#receipts">Receipts</a>
@@ -396,14 +402,12 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 </nav>
 <div id="mobilemenu">
   <a href="#method">The Method</a>
-  <a href="#school">Free Chapters</a>
   <a href="#programs">Programs</a>
   <a href="#results">Results</a>
   <a href="#receipts">Receipts</a>
   <a href="#team">The Founder</a>
   <a href="#pricing">Pricing</a>
   <a href="#faq">FAQ</a>
-  <a href="/start/">Start Free →</a>
   <a href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener" style="color:var(--wine)">Join the Floor →</a>
 </div>
 
@@ -428,9 +432,8 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <div class="btns">
         <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
         <a class="btn btn-ghost" href="https://calendly.com/maisonyr/fit-check" target="_blank" rel="noopener">Book a Free Fit Check</a>
-        <a class="btn btn-ghost" href="/start/">Start Free →</a>
       </div>
-      <p class="microline">Join directly — no call needed · The fit check is free · 30 minutes · Two chapters of the Macro School are open to anyone</p>
+      <p class="microline">Join directly — no call needed · The fit check is free · 30 minutes · Cancel anytime</p>
       <div class="facts">
         <div class="fact"><div class="n mono">+176.30%</div><div class="l">Four Months · Documented · Apr–Jul 2026</div></div>
         <div class="fact"><div class="n mono">90</div><div class="l">Trades · Posted Before Entry Or Called Live</div></div>
@@ -440,6 +443,25 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
   </div>
 </header>
+
+<!-- ============ THE FILM ============ -->
+<section id="film">
+  <div class="wrap">
+    <div class="head center reveal">
+      <div class="kicker center">The Film</div>
+      <h2>Why markets <em>actually move.</em></h2>
+    </div>
+    <!-- FILM SLOT · The Film — VSL · f.io/WJN4FG8y v1 delivered · dark+gold decision pending
+     WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
+    <figure class="film reveal">
+      <div class="frame"><iframe src="" title="The Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+      <figcaption class="cap">The Film</figcaption>
+    </figure>
+    -->
+  </div>
+</section>
+
+<hr class="hair"/>
 
 <!-- ============ PROGRAM SUMMARY ============ -->
 <section id="method">
@@ -620,35 +642,67 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <div class="chip">Join-Direct · Founding Rate Ends 24 Aug 2026</div>
         <div class="pt">The YR Live Trading Floor</div>
         <div class="pi">The live operating environment</div>
-        <div class="statstrip"><span>14 Rooms</span><span>96 Pages</span><span>Live Sessions Tue–Fri</span><span>Daily Briefings</span><span>Cancel Anytime</span></div>
+        <div class="statstrip"><span>14 Rooms</span><span>96 Pages</span><span>The Macro School · 21 Chapters</span><span>Live Sessions Tue–Fri</span><span>Daily Briefings</span><span>Cancel Anytime</span></div>
         <p class="perfline">April +50.67% · May +29.35% · June +49.02% · July +47.26% — every trade behind those numbers was posted to the desk <em>before</em> entry, or called live with members watching it happen. That is the standard, and you watch it run live.</p>
         <div class="shot">
           <img width="1600" height="1231" src="assets/proof/floor_scale_shot.jpg" alt="Inside the YR Live Trading Floor classroom on Skool" loading="lazy"/>
           <div class="cap">The Floor — inside the classroom</div>
         </div>
+
+        <!-- FILM SLOT · The Floor In 90 Seconds — Floor column slot 1
+         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
+        <figure class="film reveal">
+          <div class="frame"><iframe src="" title="The Floor In 90 Seconds" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <figcaption class="cap">The Floor In 90 Seconds</figcaption>
+        </figure>
+        -->
+
+        <!-- FILM SLOT · The Members Film — Floor column slot 2 · five members, no scripts
+         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
+        <figure class="film reveal">
+          <div class="frame"><iframe src="" title="The Members Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <figcaption class="cap">The Members Film</figcaption>
+        </figure>
+        -->
+
         <div class="mod">
           <div class="mh">The Trades</div>
           <ul>
             <li>Every position posted before entry — or called live in session: structure, stop, target, risk, managed live and scored in R</li>
             <li>The full Market Desk: a briefing every morning, the Week Ahead before Monday, the 12-panel Weekly Recap</li>
             <li>Every major release covered twice — a preview before, a recap after</li>
+            <li>Losses posted at full size, the same day, in the same room as the wins</li>
           </ul>
         </div>
+
         <div class="mod">
           <div class="mh">Trade Live With Yanis</div>
           <ul>
-            <li>Live sessions Tuesday–Friday, 6:30 AM LA / 3:30 PM Paris — minimum two guaranteed every week</li>
-            <li>The Sunday Room every other Sunday, 9:00 AM LA / 6:00 PM Paris</li>
+            <li>Live sessions Tuesday–Friday, 6:30 AM LA / 3:30 PM Paris — a minimum of two guaranteed in writing every week</li>
+            <li>The Sunday Market Room every other Sunday, 9:00 AM LA / 6:00 PM Paris — the week ahead, one chapter taught live, then questions</li>
             <li>Sessions worth rewatching go on the replay shelf, chaptered — curated, never automatic</li>
           </ul>
         </div>
+
+        <div class="mod">
+          <div class="mh">The Macro School — Twenty-One Chapters</div>
+          <div class="ms">The macro layer, written the way this desk actually reads it.</div>
+          <ul>
+            <li>Twenty-one written chapters in a locked order, from The Regime through to the FOMC Playbook</li>
+            <li>Central banks, liquidity, inflation, positioning, the VIX, and the transmission question behind every shock</li>
+            <li>Written, not filmed — read it on a phone, return to it for years, quote it back at the desk</li>
+          </ul>
+        </div>
+
         <div class="mod">
           <div class="mh">Learn To Never Need Anyone</div>
           <ul>
             <li>The full execution video course and the eleven-page desk-reading course</li>
             <li>The position-management gate with the twelve rules of the house</li>
+            <li>The market library — every thesis kept, so you can audit how a read aged</li>
           </ul>
         </div>
+
         <div class="mod">
           <div class="mh">The Road To Funded Capital</div>
           <ul>
@@ -656,20 +710,33 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
             <li>Tools and broker setup handled</li>
           </ul>
         </div>
+
         <div class="mod">
           <div class="mh">The Long Game</div>
           <ul>
             <li>Psychology, tilt control, drawdown recovery, journaling, routine</li>
-            <li>Every month reviewed openly, in percent · the market library · the private community</li>
+            <li>Every month reviewed openly, on camera, in percent — wins and losses both</li>
+            <li>The private community, and a desk that answers</li>
           </ul>
         </div>
+
+        <div class="mod">
+          <div class="mh">The Partnership</div>
+          <div class="ms">Built for members first, so money never decides who gets to stay.</div>
+          <ul>
+            <li>Bring people who belong on this desk and you earn 30% of their membership, every month, for as long as they stay</li>
+            <li>Four covers your seat. Above that, the house pays you.</li>
+          </ul>
+        </div>
+
         <div class="advbox">
           <div class="at">The Founding Advantage</div>
           <p>While the Program releases, active Floor members receive every chapter as it goes live — the full $4,000 Program, included at the Floor rate. The founding rate is $199/month and it locks for life. <span class="strong" style="color:var(--navy)">It ends on 24 August 2026, midnight Los Angeles. After that the Floor is $347.</span> Founding members never pay the difference. Once the Program is fully released, the included-chapters advantage no longer applies to new members either.</p>
         </div>
+
         <div class="foot">
           <a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a>
-          <p class="note">Note — The YR Live Trading Floor is not a signal service. Every position is posted with the full reasoning — macro context, structure, execution logic and management. You are here to become independent, not to follow blindly.</p>
+          <p class="note">Note — The YR Live Trading Floor is not a signal service. Every position is posted with the full reasoning — macro context, structure, execution logic and management. The objective is not another trade. The objective is that you stop needing anyone.</p>
         </div>
       </div>
     </div>
@@ -885,6 +952,15 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <h2>Football. Banking. Markets. <em>MAISON YR.</em></h2>
     </div>
     <p class="filmnote reveal">A filmed version of this is in the cut. The written one is below, and it is the same story.</p>
+
+    <!-- FILM SLOT · The Story Film — Story section
+     WHEN THE FILM LANDS: delete the italic 'filmed version is in the cut' line above,
+     uncomment this block, paste the embed URL into src.
+    <figure class="film reveal">
+      <div class="frame"><iframe src="" title="The Story Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+      <figcaption class="cap">The Story Film</figcaption>
+    </figure>
+    -->
     <div class="letter reveal">
       <p>I started football at three years old. I left my parents' house at twelve to pursue it, and turned professional at sixteen. The game took me across the world — France, the Netherlands, Belgium, Greece, England, the United States.</p>
       <p>I started trading at sixteen, while still playing. I joined a trading course in Belgium — in person, a full year. It was technical analysis only: charts, patterns, indicators. After that year, my account was up and down — mostly down. That failure taught me the most important lesson of my career: <span class="strong">charts don't move markets. The macro does.</span> Every market is correlated — stocks, forex, gold, oil, crypto — and there is always a reason price moves. The course never taught me the reason.</p>
@@ -909,6 +985,15 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
 
     <p class="filmnote reveal">A filmed version of these — five members, no scripts — is in the cut. Their written words are below.</p>
+
+    <!-- FILM SLOT · The Members Film — Real Members section · same file as the Floor card
+     WHEN THE FILM LANDS: delete the italic 'filmed version is in the cut' line above,
+     uncomment this block, paste the embed URL into src.
+    <figure class="film reveal">
+      <div class="frame"><iframe src="" title="The Members Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+      <figcaption class="cap">The Members Film</figcaption>
+    </figure>
+    -->
 
     <div class="member-hero reveal">
       <div>
@@ -998,6 +1083,14 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
           <li>Your First 7 Days start path + the Trading Dictionary</li>
           <li>Founding advantage: the Complete Institutional Program's content as it releases — included</li>
         </ul>
+
+        <!-- FILM SLOT · Inside The Floor — The Tour — Pricing · Floor card
+         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
+        <figure class="film reveal">
+          <div class="frame"><iframe src="" title="Inside The Floor — The Tour" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <figcaption class="cap">Inside The Floor — The Tour</figcaption>
+        </figure>
+        -->
         <div class="foot"><a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a></div>
       </div>
     </div>
@@ -1073,7 +1166,6 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
         <a href="#team">Team</a>
         <a href="#pricing">Pricing</a>
         <a href="/start/">Start Free</a>
-        <a href="https://www.skool.com/maison-yr-trading/classroom/9e2cea38" target="_blank" rel="noopener">Free Chapters</a>
         <a href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor</a>
       </div>
     </div>
@@ -1097,7 +1189,7 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 <!-- ============ LIGHTBOX ============ -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="x" aria-label="Close">✕</button>
-  <img src="" alt="Full-size proof"/>
+  <img alt="Full-size proof"/>
 </div>
 
 <script>
