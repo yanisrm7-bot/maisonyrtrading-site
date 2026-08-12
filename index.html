@@ -171,6 +171,11 @@ details.acc .accbody{padding:14px 0 4px}
 .film .frame{position:relative;width:100%;aspect-ratio:16/9;background:var(--navy)}
 .film .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .film .cap{font-family:var(--label);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:11px 14px;border-top:1px solid var(--line-soft)}
+.film .frame.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px}
+.film .frame.empty .ft{font-family:var(--serif);font-size:clamp(17px,2.4vw,22px);color:var(--cream)}
+.film .frame.empty .fs{font-family:var(--label);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:rgba(244,239,230,.5)}
+.film .frame.empty svg{width:34px;height:34px;opacity:.5}
+.film .frame.empty svg *{stroke:var(--cream);stroke-width:1.2;fill:none}
 .film.tight{margin:18px 0}
 .shot{border:1px solid var(--line);margin-bottom:22px}
 .shot img{width:100%}
@@ -455,13 +460,17 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <div class="kicker center">The Film</div>
       <h2>Why markets <em>actually move.</em></h2>
     </div>
-    <!-- FILM SLOT · The Film — VSL · f.io/WJN4FG8y v1 delivered · dark+gold decision pending
-     WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
-    <figure class="film reveal">
-      <div class="frame"><iframe src="" title="The Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <figure class="film reveal" data-film="The Film">
+      <div class="frame empty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+        <div class="ft">The Film</div>
+        <div class="fs">Filmed &middot; in the edit</div>
+      </div>
       <figcaption class="cap">The Film</figcaption>
     </figure>
-    -->
+    <!-- TO GO LIVE: replace the div.frame.empty above with:
+         <div class="frame"><iframe src="PASTE_EMBED_URL" title="The Film" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+         ...and delete any "a filmed version is in the cut" line near it. -->
   </div>
 </section>
 
@@ -653,21 +662,29 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
           <div class="cap">The Floor — inside the classroom</div>
         </div>
 
-        <!-- FILM SLOT · The Floor In 90 Seconds — Floor column slot 1
-         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
-        <figure class="film reveal">
-          <div class="frame"><iframe src="" title="The Floor In 90 Seconds" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <figure class="film reveal" data-film="The Floor In 90 Seconds">
+          <div class="frame empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+            <div class="ft">The Floor In 90 Seconds</div>
+            <div class="fs">Filmed &middot; in the edit</div>
+          </div>
           <figcaption class="cap">The Floor In 90 Seconds</figcaption>
         </figure>
-        -->
+        <!-- TO GO LIVE: replace the div.frame.empty above with:
+             <div class="frame"><iframe src="PASTE_EMBED_URL" title="The Floor In 90 Seconds" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+             ...and delete any "a filmed version is in the cut" line near it. -->
 
-        <!-- FILM SLOT · The Members Film — Floor column slot 2 · five members, no scripts
-         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
-        <figure class="film reveal">
-          <div class="frame"><iframe src="" title="The Members Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <figure class="film reveal" data-film="The Members Film">
+          <div class="frame empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+            <div class="ft">The Members Film</div>
+            <div class="fs">Filmed &middot; in the edit</div>
+          </div>
           <figcaption class="cap">The Members Film</figcaption>
         </figure>
-        -->
+        <!-- TO GO LIVE: replace the div.frame.empty above with:
+             <div class="frame"><iframe src="PASTE_EMBED_URL" title="The Members Film" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+             ...and delete any "a filmed version is in the cut" line near it. -->
 
         <div class="mod">
           <div class="mh">The Trades</div>
@@ -957,14 +974,17 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     </div>
     <p class="filmnote reveal">A filmed version of this is in the cut. The written one is below, and it is the same story.</p>
 
-    <!-- FILM SLOT · The Story Film — Story section
-     WHEN THE FILM LANDS: delete the italic 'filmed version is in the cut' line above,
-     uncomment this block, paste the embed URL into src.
-    <figure class="film reveal">
-      <div class="frame"><iframe src="" title="The Story Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <figure class="film reveal" data-film="The Story Film">
+      <div class="frame empty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+        <div class="ft">The Story Film</div>
+        <div class="fs">Filmed &middot; in the edit</div>
+      </div>
       <figcaption class="cap">The Story Film</figcaption>
     </figure>
-    -->
+    <!-- TO GO LIVE: replace the div.frame.empty above with:
+         <div class="frame"><iframe src="PASTE_EMBED_URL" title="The Story Film" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+         ...and delete any "a filmed version is in the cut" line near it. -->
     <div class="letter reveal">
       <p>I started football at three years old. I left my parents' house at twelve to pursue it, and turned professional at sixteen. The game took me across the world — France, the Netherlands, Belgium, Greece, England, the United States.</p>
       <p>I started trading at sixteen, while still playing. I joined a trading course in Belgium — in person, a full year. It was technical analysis only: charts, patterns, indicators. After that year, my account was up and down — mostly down. That failure taught me the most important lesson of my career: <span class="strong">charts don't move markets. The macro does.</span> Every market is correlated — stocks, forex, gold, oil, crypto — and there is always a reason price moves. The course never taught me the reason.</p>
@@ -990,14 +1010,17 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
 
     <p class="filmnote reveal">A filmed version of these — five members, no scripts — is in the cut. Their written words are below.</p>
 
-    <!-- FILM SLOT · The Members Film — Real Members section · same file as the Floor card
-     WHEN THE FILM LANDS: delete the italic 'filmed version is in the cut' line above,
-     uncomment this block, paste the embed URL into src.
-    <figure class="film reveal">
-      <div class="frame"><iframe src="" title="The Members Film" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <figure class="film reveal" data-film="The Members Film">
+      <div class="frame empty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+        <div class="ft">The Members Film</div>
+        <div class="fs">Filmed &middot; in the edit</div>
+      </div>
       <figcaption class="cap">The Members Film</figcaption>
     </figure>
-    -->
+    <!-- TO GO LIVE: replace the div.frame.empty above with:
+         <div class="frame"><iframe src="PASTE_EMBED_URL" title="The Members Film" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+         ...and delete any "a filmed version is in the cut" line near it. -->
 
     <div class="member-hero reveal">
       <div>
@@ -1011,8 +1034,16 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
     <div class="grid reveal" style="grid-template-columns:repeat(2,1fr)">
       <div class="gtile lb" data-full="assets/proof/testimonial_alixson_main.jpg" role="button" tabindex="0"><img width="1200" height="1150" src="assets/proof/testimonial_alixson_main.jpg" alt="Alixson — full testimonial" loading="lazy"/><div class="cap">Alixson · Testimonial</div></div>
       <div class="gtile lb" data-full="assets/proof/testimonial_naomi.png" role="button" tabindex="0"><img width="1597" height="949" src="assets/proof/testimonial_naomi.png" alt="Naomi — testimonial" loading="lazy"/><div class="cap">Naomi · Testimonial</div></div>
-      <div class="gtile lb" data-full="assets/proof/exhibit_member_analysis_nzdchf.jpg" role="button" tabindex="0"><img width="1200" height="2570" src="assets/proof/exhibit_member_analysis_nzdchf.jpg" alt="A member's own NZDCHF analysis — regime, catalyst, two scenarios" loading="lazy"/><div class="cap">A member's own NZDCHF analysis</div></div>
-      <div class="gtile lb" data-full="assets/proof/A9_hugo_dm.png" role="button" tabindex="0"><img width="924" height="679" src="assets/proof/A9_hugo_dm.png" alt="Hugo — six positions from one briefing, risked 1%" loading="lazy"/><div class="cap">Hugo · Six positions, one briefing</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_hugo.png" role="button" tabindex="0"><img width="1597" height="914" src="assets/proof/testimonial_hugo.png" alt="Hugo — testimonial" loading="lazy"/><div class="cap">Hugo · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_alex_june.png" role="button" tabindex="0"><img width="1597" height="724" src="assets/proof/testimonial_alex_june.png" alt="Alex — testimonial, June" loading="lazy"/><div class="cap">Alex · Testimonial</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_alex_200.png" role="button" tabindex="0"><img width="1597" height="810" src="assets/proof/testimonial_alex_200.png" alt="Alex — nearly 200% of his starting balance, in his own words" loading="lazy"/><div class="cap">Alex · &ldquo;Nearly 200% of my starting balance&rdquo;</div></div>
+      <div class="gtile lb" data-full="assets/proof/testimonial_nikolas.png" role="button" tabindex="0"><img width="1597" height="665" src="assets/proof/testimonial_nikolas.png" alt="Nikolas — introduction" loading="lazy"/><div class="cap">Nikolas · Introduction</div></div>
+      <div class="gtile lb" data-full="assets/proof/alixson_first_payout.png" role="button" tabindex="0"><img width="1600" height="878" src="assets/proof/alixson_first_payout.png" alt="Alixson — first payout post" loading="lazy"/><div class="cap">Alixson · First payout</div></div>
+      <div class="gtile lb" data-full="assets/proof/A4_alixson_calm_tp.png" role="button" tabindex="0"><img width="612" height="510" src="assets/proof/A4_alixson_calm_tp.png" alt="Alixson — NAS100 calm take-profit on a funded account" loading="lazy"/><div class="cap">Alixson · Calm TP · Funded</div></div>
+      <div class="gtile lb" data-full="assets/proof/A11_lucien_payout.jpg" role="button" tabindex="0"><img width="901" height="1319" src="assets/proof/A11_lucien_payout.jpg" alt="Lucien — 27 trades, zero drawdown run" loading="lazy"/><div class="cap">Lucien · 27 trades · 0% drawdown</div></div>
+      <div class="gtile lb" data-full="assets/proof/proof_withdrawal_approved.png" role="button" tabindex="0"><img width="1600" height="418" src="assets/proof/proof_withdrawal_approved.png" alt="Withdrawal approved — proof" loading="lazy"/><div class="cap">Withdrawal · Approved</div></div>
+      <div class="gtile lb" data-full="assets/proof/A9_hugo_dm.png" role="button" tabindex="0"><img width="924" height="679" src="assets/proof/A9_hugo_dm.png" alt="Hugo — six pairs from one briefing" loading="lazy"/><div class="cap">Hugo · 6 pairs, one briefing</div></div>
+      <div class="gtile lb" data-full="assets/proof/exhibit_member_analysis_nzdchf.jpg" role="button" tabindex="0"><img width="1200" height="2570" src="assets/proof/exhibit_member_analysis_nzdchf.jpg" alt="A member's own NZDCHF analysis" loading="lazy"/><div class="cap">A member's own NZDCHF analysis</div></div>
     </div>
 
     <p class="disc reveal" style="text-align:center;margin:0 auto">This is the beginning — MAISON YR opened in April 2026, and these are from members' first weeks. All of it reflects live accounts and real messages. Past performance is not indicative of future results. Trading involves significant risk. Results shown are individual and non-representative. MAISON YR does not manage client funds.</p>
@@ -1088,13 +1119,17 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
           <li>Founding advantage: the Complete Institutional Program's content as it releases — included</li>
         </ul>
 
-        <!-- FILM SLOT · Inside The Floor — The Tour — Pricing · Floor card
-         WHEN THE FILM LANDS: uncomment this block and paste the embed URL into src.
-        <figure class="film reveal">
-          <div class="frame"><iframe src="" title="Inside The Floor — The Tour" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-          <figcaption class="cap">Inside The Floor — The Tour</figcaption>
+        <figure class="film reveal" data-film="Inside The Floor">
+          <div class="frame empty">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg>
+            <div class="ft">Inside The Floor</div>
+            <div class="fs">Filmed &middot; in the edit</div>
+          </div>
+          <figcaption class="cap">Inside The Floor</figcaption>
         </figure>
-        -->
+        <!-- TO GO LIVE: replace the div.frame.empty above with:
+             <div class="frame"><iframe src="PASTE_EMBED_URL" title="Inside The Floor" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+             ...and delete any "a filmed version is in the cut" line near it. -->
         <div class="foot"><a class="btn btn-primary" href="https://www.skool.com/maison-yr-trading/classroom/41d81244" target="_blank" rel="noopener">Join the Floor →</a></div>
       </div>
     </div>
