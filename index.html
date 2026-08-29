@@ -296,6 +296,14 @@ details.acc .accbody{padding:14px 0 4px}
 .price li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:1px;background:var(--wine)}
 .price .foot{margin-top:auto}
 .price .btn{width:100%;justify-content:center}
+.price .wk{font-family:var(--label);font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:14px 0 0}
+.price .wt{border-top:1px solid var(--line);margin:8px 0 6px}
+.price .wr{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line-soft)}
+.price .wl{font-size:13.5px;color:var(--soft);line-height:1.5;text-align:left}
+.price .wl b{color:var(--navy);font-weight:600}
+.price .wv{font-family:var(--mono);font-size:13px;white-space:nowrap;color:var(--navy)}
+.price .wv.na{color:var(--wine)}
+@media(max-width:520px){.price .wr{flex-direction:column;gap:3px}.price .wv{font-size:12.5px}}
 .pquote{max-width:640px;margin:0 auto 54px;text-align:center;font-size:16px;font-style:italic;color:var(--soft)}
 .pquote .by{font-style:normal;font-family:var(--label);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:12px;display:block}
 .pricing-intro{max-width:640px;margin:-26px auto 44px;text-align:center;color:var(--soft);font-size:15px}
@@ -1170,16 +1178,15 @@ footer .legal{max-width:760px;line-height:1.7;font-size:12px}
       <div class="price hi reveal">
         <div class="chip">Founding Rate Ends 13 Sep 2026</div>
         <div class="pn">The YR Live Trading Floor</div>
-        <ul>
-          <li>Every trade posted before entry — or called live in session — with the full reasoning. Not sold anywhere, by anyone — no honest desk opens its live positions</li>
-          <li>Minimum 2 live Zoom sessions weekly (often more) + the Sunday Market Room — 16+ hours of live desk time a month; $1,600+ anywhere coaching is sold by the hour</li>
-          <li>Daily morning briefings + weekly macro research reports — sold alone, a $100+/month research subscription</li>
-          <li>Monthly review videos + performance report cards</li>
-          <li>The curated replay shelf, chaptered — watch on your time</li>
-          <li>Your First 7 Days start path + the Trading Dictionary</li>
-          <li>The Complete Institutional Program — the $4,000 course — included as it releases</li>
-        </ul>
-        <p class="pnote">Price it piece by piece, honestly, and it comes to thousands. The membership is one rate:</p>
+        <div class="wk">The inventory, priced honestly</div>
+        <div class="wt">
+          <div class="wr"><span class="wl"><b>Every trade posted before entry</b> — or called live in session — with the full reasoning. No honest desk opens its live positions</span><span class="wv na">not for sale</span></div>
+          <div class="wr"><span class="wl"><b>16+ hours of live desk time a month</b> — minimum 2 Zoom sessions weekly, often more, plus the Sunday Market Room</span><span class="wv">$1,600+/mo</span></div>
+          <div class="wr"><span class="wl"><b>The daily morning briefing + the weekly macro research report</b> — a paid research subscription on its own</span><span class="wv">$100+/mo</span></div>
+          <div class="wr"><span class="wl"><b>The Complete Institutional Program</b> — included as it releases</span><span class="wv">$4,000</span></div>
+          <div class="wr"><span class="wl">Monthly review films · performance report cards · the chaptered replay shelf · the First 7 Days path + the Trading Dictionary</span><span class="wv">included</span></div>
+        </div>
+        <p class="pnote" style="margin:14px 0 0">Price it piece by piece, honestly: thousands a month. The membership is one rate —</p>
         <div class="amt">$199<small>/month</small></div>
         <p class="prate">Ends 13 Sep 2026<br/>Midnight Los Angeles<br/>Then $347/month</p>
         <p class="pnote">Founding rate — join before the deadline and you keep $199 for as long as you stay; founding members never pay the difference. Cancel anytime.</p>
