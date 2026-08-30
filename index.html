@@ -28,8 +28,13 @@
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" href="/assets/favicon_maison_yr.png"/>
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
-<!-- Meta Pixel -->
-<script>
+<!-- Meta Pixel — OFF. Switched off 30 Aug 2026 on his word. It was staged "not deployed"
+     pending his OK on the first campaign, then went live by accident riding a value-stack
+     deploy. To switch back on: change type="text/plain" back to nothing on the script below,
+     and uncomment the noscript img. Pixel ID 2624457527997724. The custom events in
+     /start (StartRead, LobbyDoorClick, Scroll50) are already guarded by
+     if(typeof fbq==="function") so they no-op silently while this is off. -->
+<script type="text/plain" data-pixel="off">
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -38,8 +43,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','2624457527997724');
 fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2624457527997724&ev=PageView&noscript=1"/></noscript>
+<!-- noscript pixel img removed while the pixel is off -->
 <!-- End Meta Pixel -->
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCQGJY0GYC"></script>

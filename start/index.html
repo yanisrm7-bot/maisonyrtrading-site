@@ -41,6 +41,23 @@
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" href="/assets/favicon_maison_yr.png"/>
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
+<!-- Meta Pixel — OFF. Switched off 30 Aug 2026 on his word. It was staged "not deployed"
+     pending his OK on the first campaign, then went live by accident riding a value-stack
+     deploy. To switch back on: change type="text/plain" back to nothing on the script below,
+     and uncomment the noscript img. Pixel ID 2624457527997724. The custom events in
+     /start (StartRead, LobbyDoorClick, Scroll50) are already guarded by
+     if(typeof fbq==="function") so they no-op silently while this is off. -->
+<script type="text/plain" data-pixel="off">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2624457527997724');
+fbq('track','PageView');
+</script>
+<!-- noscript pixel img removed while the pixel is off -->
+<!-- End Meta Pixel -->
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCQGJY0GYC"></script>
 <script>
@@ -393,7 +410,7 @@ p b,p strong{color:var(--navy);font-weight:600}
   <div class="sub">So you know what you are walking into</div>
   <div class="road">
     <div class="step"><div class="sn">Now</div><div class="sb"><b>You understand what moves price.</b> That is this page. Most people trading today cannot do what you just did.</div></div>
-    <div class="step"><div class="sn">Next</div><div class="sb"><b>The free room.</b> The Macro Starter Pack — ten more chapters from zero, on the page or as a PDF — plus two complete chapters of the Macro School, the wall of receipts, all four report cards, and a free seat in the live Market Room every other Sunday.</div></div>
+    <div class="step"><div class="sn">Next</div><div class="sb"><b>The free room.</b> The Macro Starter Pack — ten more chapters from zero, on the page or as a PDF — plus two complete chapters of the Macro School, the wall of receipts, all five report cards, and a free seat in the live Market Room every other Sunday.</div></div>
     <div class="step"><div class="sn">Then</div><div class="sb"><b>You watch it done live.</b> The desk runs Tuesday to Friday as markets merit — minimum two live sessions every week, guaranteed in writing — every position posted before entry with the full reasoning. A desk morning has one shape: before the data, a briefing — what the desk expects and what would change its mind. The number prints. Then the recap — what actually happened, what the desk did about it, and the result in percent, win or loss. You stop reading about macro and start watching it turn into decisions.</div></div>
     <div class="step"><div class="sn">Then</div><div class="sb"><b>You take your own.</b> The twenty-one chapters, the twelve rules of the house, the risk gate every member passes before they are allowed to size up, and a desk that answers when you get it wrong.</div></div>
     <div class="step"><div class="sn">After</div><div class="sb"><b>You trade capital that is not yours.</b> The route to a funded account, mapped, and built to run around a full-time job.</div></div>
@@ -423,7 +440,7 @@ p b,p strong{color:var(--navy);font-weight:600}
 
 <div class="wrap">
   <h2 class="kicker">Where to go from here</h2>
-  <p>There is a lot more of this, free, and it does not cost you anything but the click. The Lobby has the Macro Starter Pack — ten more written chapters from zero, yours on the page or as a PDF — two complete chapters of the Macro School exactly as members read them, the wall of receipts with every loss printed beside every win, all four monthly report cards, and a free seat in the live Market Room every other Sunday — the same room the members sit in, two hours, questions until they run out.</p>
+  <p>There is a lot more of this, free, and it does not cost you anything but the click. The Lobby has the Macro Starter Pack — ten more written chapters from zero, yours on the page or as a PDF — two complete chapters of the Macro School exactly as members read them, the wall of receipts with every loss printed beside every win, all five monthly report cards, and a free seat in the live Market Room every other Sunday — the same room the members sit in, two hours, questions until they run out.</p>
   <p>That is the free side, and it is genuinely free. No card, no call.</p>
   <p><b>And when you want the rest</b> — the desk running Tuesday to Friday as markets merit with a minimum of two live sessions every week guaranteed in writing, every trade posted before entry with the reasoning, the twenty-one chapters of the Macro School, the whole road to trading funded capital — the door to the Live Trading Floor is inside, and the price and the details are on the website. Read the free room first. Decide in your own time.</p>
   <div class="door">
@@ -465,12 +482,17 @@ p b,p strong{color:var(--navy);font-weight:600}
     paint();
   })();
 
+  // Meta: fires on every /start load, the top of the funnel we own.
+  if(typeof fbq==='function') fbq('trackCustom','StartRead');
+
   // CTA click tracking + how far people actually read.
   ['cta1','cta2','cta3'].forEach(function(id){
     var el=document.getElementById(id);
     if(!el) return;
     el.addEventListener('click', function(){
       if(typeof gtag==='function') gtag('event','lobby_cta_click',{cta_position:id,page:'/start/'});
+      // Meta: the Phase-2 optimisation event. Build a Custom Conversion on this name.
+      if(typeof fbq==='function') fbq('trackCustom','LobbyDoorClick',{cta_position:id});
     });
   });
   (function(){
@@ -480,6 +502,8 @@ p b,p strong{color:var(--navy);font-weight:600}
       marks.forEach(function(m){
         if(pct>=m && !hit[m]){ hit[m]=1;
           if(typeof gtag==='function') gtag('event','read_depth',{percent:m,page:'/start/'});
+          // Meta: the honesty check — did they actually read, or land and bounce?
+          if(m===50 && typeof fbq==='function') fbq('trackCustom','Scroll50');
         }
       });
     }, {passive:true});
